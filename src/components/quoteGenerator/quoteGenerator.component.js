@@ -2,56 +2,63 @@
 import React from 'react';
 
 import './quoteGenerator.style.css';
-import getQuote from './quote.utils';
+import { getQuotes, getQuote } from './quote.utils';
 
 class QuoteGenerator extends React.Component {
 	constructor(props) {
 		super(props);
 
 		this.state = {
-			quote: '',
+			quotes: '',
 		};
 	}
 	handleClick = async () => {
-		const quote = await getQuote();
-		this.setState({ ...this.state, quote: quote });
+		this.setState({ ...this.state });
 	};
 	async componentDidMount() {
-		const quote = await getQuote();
-		this.setState({ ...this.state, quote: quote });
+		const quotes = await getQuotes();
+
+		this.setState({ ...this.state, quotes: quotes });
 	}
 	render() {
-		const quote = this.state.quote;
-		console.log(quote);
+		console.log(this.state.quotes);
+		const quote = getQuote(this.state.quotes);
+
 		return (
 			<div className='Quote-page'>
 				<div className='home-container'>
 					<a href='/'>Home</a>
 				</div>
 				<div className='Quote-section'>
-					<div className='Quote-container'>
-						{/* -----Quote ---------------------------------- */}
-						<div className='quote-text'>
-							<i className='fas fa-quote-left'></i>
-							<span id='quote'> {' ' + quote.text}</span>
+					{quote ? (
+						<div className='Quote-container'>
+							{/* -----Quote ---------------------------------- */}
+							<div className='quote-text'>
+								<i className='fas fa-quote-left'></i>
+								<span id='quote'>{quote.text}</span>
+							</div>
+							{/* ---------Author------------------- */}
+							<div className='quote-author'>
+								<span id='author'>
+									{quote.author ? quote.author : 'Unknown'}
+								</span>
+							</div>
+							{/* --------------------Buttons--------------------- */}
+							<div className='button-container'>
+								<button
+									className='twitter-button'
+									id='twitter'
+									title='This is Twitter'>
+									<i className='fab fa-twitter'></i>
+								</button>
+								<button id='new-quote' onClick={this.handleClick}>
+									New Quote
+								</button>
+							</div>
 						</div>
-						{/* ---------Author------------------- */}
-						<div className='quote-author'>
-							<span id='author'>{quote.author}</span>
-						</div>
-						{/* --------------------Buttons--------------------- */}
-						<div className='button-container'>
-							<button
-								className='twitter-button'
-								id='twitter'
-								title='This is Twitter'>
-								<i className='fab fa-twitter'></i>
-							</button>
-							<button id='new-quote' onClick={this.handleClick}>
-								New Quote
-							</button>
-						</div>
-					</div>
+					) : (
+						<div class='loader'></div>
+					)}
 				</div>
 			</div>
 		);

@@ -1,15 +1,17 @@
 /** @format */
 
-const getQuote = async () => {
+export const getQuotes = async () => {
 	const api = 'https://type.fit/api/quotes';
 	try {
 		const res = await fetch(api);
 		const data = await res.json();
 
-		const quote = data[Math.floor(Math.random() * data.length)];
-		console.log(quote);
-		return quote;
+		return data;
 	} catch (error) {}
 };
 
-export default getQuote;
+export const getQuote = (data) => {
+	const quote = data[Math.floor(Math.random() * data.length)];
+	console.log(quote);
+	return quote;
+};
