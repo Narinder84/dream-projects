@@ -35,6 +35,9 @@
 	justify-content: center;
 	align-items: center;
 }
+.scroll-page .loader-continer h1 {
+	letter-spacing: 5px;
+}
 .scroll-page .heading {
 	text-align: center;
 	letter-spacing: 5px;

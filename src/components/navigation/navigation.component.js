@@ -6,6 +6,7 @@ const NavigationBar = () => {
 		<div className='nav-container'>
 			<a href='quote'>Quote Generator</a>
 			<a href='infiniteScroll'>Infinite Scroll</a>
+			<a href='picture'>Picture in Picture</a>
 		</div>
 	);
 };
