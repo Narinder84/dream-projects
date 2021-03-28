@@ -16,13 +16,15 @@ class InfiScroll extends React.Component {
 		};
 	}
 	imagesLoaded = () => {
+		console.log('Load.....');
+
 		this.setState(
 			(prevState) => ({
 				...prevState,
 				imagesLoaded: prevState.imagesLoaded + 1,
 			}),
 			() => {
-				if (this.state.imagesLoaded === this.state.totalPics) {
+				if (this.state.totalPics === this.state.imagesLoaded) {
 					this.setState({ ...this.state, ready: true });
 				}
 			},
@@ -30,28 +32,41 @@ class InfiScroll extends React.Component {
 	};
 	async componentDidMount() {
 		const data = await getPhotos();
+		console.log('===mounting====');
 		this.setState({ ...this.state, photos: data, totalPics: data.length });
 		window.addEventListener('scroll', async () => {
+			console.log(this.state.ready, '===scroll trigger');
 			if (
-				window.innerHeight + window.scrollY >=
-					document.body.offsetHeight - 1000 &&
-				this.state.ready
+				this.state.ready === true &&
+				window.innerHeight + window.scrollY >= document.body.offsetHeight - 1000
 			) {
+				this.setState({ ready: false });
+				console.log(
+					this.state.ready === true &&
+						window.innerHeight + window.scrollY >=
+							document.body.offsetHeight - 1000,
+				);
+				console.log(this.state.ready, '<<<<<<<<<<<<<<<');
 				const data = await getPhotos();
+				console.log(
+					'fetching in progress___________________',
+					this.state.ready,
+				);
 				const newData = [...this.state.photos, ...data];
+				console.log('fetched >>>>>>>>', newData);
 				this.setState((prevState) => ({
 					...prevState,
 					photos: newData,
 					totalPics: newData.length,
-					ready: false,
 				}));
 			}
 		});
 	}
 
 	render() {
+		console.log(this.state);
 		const photos = this.state.photos;
-		console.log(photos);
+
 		return (
 			<div className='scroll-page'>
 				<div className='home-container'>
