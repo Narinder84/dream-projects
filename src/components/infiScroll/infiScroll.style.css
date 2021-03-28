@@ -1,0 +1,49 @@
+/** @format */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+.scroll-page {
+	font-family: Bebas Neue, sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.scroll-page h1 {
+	font-size: 2.2rem;
+}
+.loader {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.scroll-page .loader-continer {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	background-color: whitesmoke;
+	opacity: 0.39;
+	justify-content: center;
+	align-items: center;
+}
+.scroll-page .heading {
+	text-align: center;
+	letter-spacing: 5px;
+}
+.scroll-page .img-div {
+	box-sizing: border-box;
+
+	margin: 15px 30%;
+}
+.scroll-page .img-div img {
+	width: 100%;
+}
+@media screen and (max-width: 812px) {
+	.scroll-page h1 {
+		font-size: 1.2rem;
+	}
+	.scroll-page .img-div {
+		margin: 15px;
+	}
+}

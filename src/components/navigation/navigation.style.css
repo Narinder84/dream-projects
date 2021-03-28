@@ -6,6 +6,7 @@
 	display: flex;
 	align-items: center;
 	height: 50px;
+	justify-content: space-around;
 }
 .nav-container a {
 	color: black;
