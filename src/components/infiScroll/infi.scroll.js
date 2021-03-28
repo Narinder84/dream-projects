@@ -54,7 +54,12 @@ class InfiScroll extends React.Component {
 		console.log(photos);
 		return (
 			<div className='scroll-page'>
-				<h1 className='heading'>Un Splash Infinite Scroll - API</h1>
+				<div className='home-container'>
+					<a href='/'>Home</a>
+				</div>
+				<div className='heading-container'>
+					<h1 className='heading'>Un Splash Infinite Scroll - API</h1>
+				</div>
 				{photos.length === 0 ? (
 					<div className='loader-continer'>
 						<div className='loader'>
