@@ -1,0 +1,22 @@
+/** @format */
+
+.picture-page {
+	box-sizing: border-box;
+	background-color: rgb(66, 64, 64);
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+.picture-container {
+	height: 93vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.btn-container {
+	border-radius: 7px;
+	border: 1px solid black;
+	padding: 15px;
+	box-shadow: inset 2px 2px rgb(83, 82, 82);
+}

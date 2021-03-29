@@ -46,12 +46,15 @@ class QuoteGenerator extends React.Component {
 							{/* --------------------Buttons--------------------- */}
 							<div className='button-container'>
 								<button
-									className='twitter-button'
+									className=' btn twitter-button'
 									id='twitter'
 									title='This is Twitter'>
 									<i className='fab fa-twitter'></i>
 								</button>
-								<button id='new-quote' onClick={this.handleClick}>
+								<button
+									className='btn'
+									id='new-quote'
+									onClick={this.handleClick}>
 									New Quote
 								</button>
 							</div>

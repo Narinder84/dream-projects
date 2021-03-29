@@ -78,7 +78,7 @@
 	justify-content: space-between;
 }
 
-button {
+.btn {
 	border: none;
 	cursor: pointer;
 	border-radius: 5px;
@@ -88,19 +88,19 @@ button {
 	padding: 0.5rem 2.5rem;
 	height: 2.5rem;
 	font-size: 1.2rem;
-	box-shadow: 0 0.3rem rgba(153, 152, 152, 0.65);
+	box-shadow: 0 0.2rem rgba(153, 152, 152, 0.65);
 }
-button:hover {
+.btn:hover {
 	filter: brightness(110%);
 }
-button:active {
+.btn:active {
 	transform: translate(0, 0.03rem);
 	box-shadow: 0 0.1rem rgb(121, 121, 121, 0.65);
 }
-button.twitter-button {
+.btn.twitter-button {
 	font-size: 1.2rem;
 }
-button.twitter-button:hover {
+.btn.twitter-button:hover {
 	color: rgb(21, 23, 32);
 }
 #twitter:hover {
