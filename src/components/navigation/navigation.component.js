@@ -7,6 +7,7 @@ const NavigationBar = () => {
 			<a href='quote'>Quote Generator</a>
 			<a href='infiniteScroll'>Infinite Scroll</a>
 			<a href='picture'>Picture in Picture</a>
+			<a href='jokeTeller'>JokeTeller</a>
 		</div>
 	);
 };
