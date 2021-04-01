@@ -20,7 +20,7 @@ class DarkAndLight extends React.Component {
 		this.sliderChecked = React.createRef();
 	}
 	componentDidMount() {
-		const status = localStorage.getItem('isLightMode');
+		const status = sessionStorage.getItem('isLightMode');
 
 		if (status === 'false') {
 			this.sliderChecked.current.checked = true;
@@ -33,11 +33,13 @@ class DarkAndLight extends React.Component {
 	handleSwitch = (checkStatus) => {
 		if (checkStatus === false) {
 			document.documentElement.setAttribute('data-theme', 'dark');
-			localStorage.setItem('isLightMode', false);
+
+			sessionStorage.setItem('isLightMode', false);
 		}
 		if (checkStatus === true) {
 			document.documentElement.setAttribute('data-theme', 'light');
-			localStorage.setItem('isLightMode', true);
+
+			sessionStorage.setItem('isLightMode', true);
 		}
 	};
 	handleChange = (e) => {
