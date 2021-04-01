@@ -197,7 +197,7 @@ p {
 }
 
 .slider {
-	background: #ccc;
+	background: rgb(233, 103, 103);
 	bottom: 0;
 	cursor: pointer;
 	left: 0;

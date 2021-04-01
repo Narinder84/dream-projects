@@ -21,7 +21,7 @@ class DarkAndLight extends React.Component {
 	}
 	componentDidMount() {
 		const status = localStorage.getItem('isLightMode');
-		console.log(status, '======');
+
 		if (status === 'false') {
 			this.sliderChecked.current.checked = true;
 			this.handleSwitch(false);
@@ -32,12 +32,10 @@ class DarkAndLight extends React.Component {
 	}
 	handleSwitch = (checkStatus) => {
 		if (checkStatus === false) {
-			console.log('====isLight=====');
 			document.documentElement.setAttribute('data-theme', 'dark');
 			localStorage.setItem('isLightMode', false);
 		}
 		if (checkStatus === true) {
-			console.log('====isLight=====');
 			document.documentElement.setAttribute('data-theme', 'light');
 			localStorage.setItem('isLightMode', true);
 		}
