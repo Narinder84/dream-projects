@@ -84,13 +84,19 @@ h2 {
 .about-container {
 	display: flex;
 }
-
+.skills-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
 .image-container {
 	border: 1px solid var(--secondary-color);
 	border-radius: 10px;
 	padding: 10px 20px;
 	margin-right: 25px;
 	width: auto;
+	height: 40vh;
 	background: var(--background);
 	box-shadow: var(--box-shadow);
 }
@@ -163,6 +169,7 @@ button:hover:not(.outline) {
 p {
 	margin: 0;
 	line-height: 25px;
+	font-size: 1.3rem;
 }
 .theme-switch-wrapper {
 	display: flex;
@@ -243,4 +250,134 @@ input:checked + .slider::before {
 }
 .nav-dark {
 	background-color: rgb(0 0 0/50%);
+}
+.text-box-len {
+	width: 70%;
+	line-height: 25px;
+}
+#text-box-len-project {
+	width: 91%;
+}
+
+.lan {
+	display: flex;
+
+	width: 100%;
+
+	justify-content: space-between;
+}
+.lan-section {
+	width: 80%;
+}
+.lan-section p {
+	margin: 0;
+	line-height: 25px;
+	font-size: 1.3rem;
+}
+.lan-section-first {
+	font-weight: bolder;
+	text-shadow: 10px, 10px black;
+	color: var(--primary-color);
+}
+#first {
+	font-size: 1.5rem;
+}
+.lan p {
+	padding-top: 15px;
+	text-shadow: 1px 1px black;
+	margin: 0;
+	line-height: 25px;
+	font-size: 1.3rem;
+}
+.image-container-project {
+	margin-right: 25px;
+	width: auto;
+	height: 30vh;
+}
+#project {
+	width: 100%;
+	height: 100%;
+}
+.project-container {
+	flex-direction: column;
+	display: flex;
+	box-sizing: border-box;
+	/* border: red 2px solid; */
+	width: 70vw;
+	height: 100vh;
+	padding: 20px;
+}
+.description {
+	/* border: green 2px solid; */
+	width: 100%;
+	height: auto;
+}
+.project-all {
+	display: flex;
+	margin-bottom: 20px;
+}
+#image-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#work {
+	margin-bottom: 5px;
+}
+.send-container {
+	display: flex;
+	width: 100%;
+	justify-content: flex-end;
+}
+#contact {
+	height: 150vh;
+}
+
+#contact-form {
+	margin-top: 0;
+	width: 100vh;
+	height: auto;
+	color: var(--primary-color);
+}
+#send {
+	outline: none;
+	box-shadow: 1px 1px 1px rgb(151, 149, 149);
+	font-size: 1.2rem;
+}
+#send:active {
+	box-shadow: inset 0px 0px 0px rgb(248, 173, 173);
+	font-size: 1.2rem;
+}
+input {
+	background-color: whitesmoke;
+	outline: none;
+	padding: 5px 10px;
+	width: 80%;
+	height: 30px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	border-radius: 7px;
+	font-size: 1.5rem;
+}
+textarea {
+	background-color: whitesmoke;
+	width: 80%;
+	height: 100px;
+	border-radius: 7px;
+	padding: 10px 10px;
+	font-size: 1.7rem;
+	margin-top: 5px;
+}
+#project-btn {
+	outline: none;
+	box-shadow: 2px 2px 2px rgb(87, 85, 85);
+	font-size: 1rem;
+}
+#project-btn:active {
+	outline: none;
+	box-shadow: inset 0px 0px 0px rgb(243, 164, 164);
+	font-size: 1rem;
+}
+#fault {
+	color: red;
 }
