@@ -4,15 +4,31 @@
 	padding: 0px 10px;
 	font-size: large;
 	display: flex;
-	align-items: center;
-	height: 50px;
-	justify-content: space-around;
+	flex-direction: column;
 }
-.nav-container a {
-	color: black;
+.image-container:hover {
+	box-shadow: 2px 2px 2px whitesmoke;
+}
+.back {
+	padding-top: 10px;
+	text-align-last: right;
+}
+#back {
 	text-decoration: none;
+	border: none;
 }
-.nav-container a:hover {
-	color: black;
-	text-decoration: underline;
+.j-projects {
+	height: 95vh;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+@media screen and (max-width: 770px) {
+	.nav-container {
+		margin-left: 25px;
+	}
+	#image-container {
+		margin-bottom: 10px;
+	}
 }

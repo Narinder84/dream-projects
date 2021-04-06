@@ -18,6 +18,7 @@ import contactNight from './img/undraw_contact_us_night.svg';
 import aboutDay from './img/undraw_about_me_day.svg';
 import aboutNight from './img/undraw_about_me_night.svg';
 import work from './img/Crown-zip.png';
+import allProjects from './img/Allprojrcts.png';
 
 import './darkLight.style.css';
 
@@ -137,170 +138,184 @@ class DarkAndLight extends React.Component {
 					className={` ${
 						this.state.isLightMode === false ? 'nav-dark' : null
 					} `}>
-					<a href='#home'>HOME</a>
-					<a href='#about'>ABOUT</a>
-					<a href='#skills'>Skills</a>
-					<a href='#projects'>PROJECTS</a>
-					<a href='#contact'>CONTACT</a>
+					<a class='na' href='#home'>
+						HOME
+					</a>
+					<a class='na' href='#about'>
+						ABOUT
+					</a>
+					<a class='na' href='#skills'>
+						Skills
+					</a>
+					<a class='na' href='#projects'>
+						PROJECTS
+					</a>
+					<a class='na' href='#contact'>
+						CONTACT
+					</a>
 				</nav>
-				<section id='home'>
-					<div className='title-group'>
-						<h1>HI,welcome to Narinder,s personal website. </h1>
-						<h2> React Developer.</h2>
+				<div className='all-sections'>
+					<section id='home'>
+						<div className='title-group' id='tit'>
+							<h1>Hi,welcome to NARINDER'S personal website. </h1>
+							<h2> React Developer.</h2>
 
-						<img
-							src={this.state.isLightMode ? reactLogoLight : recatLogDark}
-							alt='Idea'
-							id='image3'
-						/>
-					</div>
-				</section>
-				<section id='about'>
-					<div class='about-container'>
-						<div className='skills-container'>
-							<h1>About</h1>
 							<img
-								src={this.state.isLightMode ? aboutDay : aboutNight}
+								src={this.state.isLightMode ? reactLogoLight : recatLogDark}
 								alt='Idea'
 								id='image3'
 							/>
-							<div
-								className={`text-box ${
-									this.state.isLightMode === false ? ' dark-text-box' : null
-								}`}
-								id='text-box'>
-								<p>
-									Narinder has experience in developing React Apps. He has an
-									extensive knowledge of JavaScript, CSS, SASS, HTML, React,
-									React-Router, Redux, Redux-Thunks. He also have significant
-									experience with popular libraries and frameworks such as
-									Bootstrap, Material UI and implementing CSS in JavaScript with
-									Styled component library.
-								</p>
-							</div>
 						</div>
-					</div>
-				</section>
-				<section id='skills'>
-					<h1>Skills</h1>
-					<div class='about-container'>
-						<img
-							src={this.state.isLightMode ? programmimgDay : programmimgNight}
-							alt='Idea'
-							id='image3'
-						/>
-					</div>
-					<div
-						className={`text-box text-box-len   ${
-							this.state.isLightMode === false ? ' dark-text-box' : null
-						}`}>
-						<div className='lan'>
-							<p className='lan-section-first' id='first'>
-								Languages:
-							</p>
-							<span className='lan-section'>
-								<p> Java Script , Python, HTML, CSS, SQL</p>
-							</span>
-						</div>
-						<div className='lan'>
-							<p className='lan-section-first' id='first'>
-								Libraries:
-							</p>
-							<span className='lan-section'>
-								<p>
-									React, React-Router, React-Redux, Redux-Thunk, Sagas, Material
-									UI, Bootstrap, StyledComponent, CSS-Grid, CSS-Flex Box, SASS
-								</p>
-							</span>
-						</div>
-						<div className='lan'>
-							<p className='lan-section-first' id='first'>
-								Data Base:
-							</p>
-							<span className='lan-section'>
-								<p>SQL Server, MySQL, Postgres, Mongo DB, FireBase, Redise</p>
-							</span>
-						</div>
-						<div className='lan'>
-							<p className='lan-section-first' id='first'>
-								Methodologies:
-							</p>
-							<span className='lan-section'>
-								<p>
-									Agile Software Development, REST API, Software design
-									patterns, Circle CI
-								</p>
-							</span>
-						</div>
-					</div>
-				</section>
-				<section id='projects'>
-					<h1>Projects</h1>
-					<div className='image-container-project'>
-						<img
-							src={this.state.isLightMode ? projectsDay : projectsNight}
-							alt='Idea'
-							id='project'
-						/>
-					</div>
-					<div className='project-container'>
-						<div className='project-all'>
-							<div className='image-container' id='image-container'>
-								<p>Crown-zip. An e-commerce project</p>
-								<img src={work} alt='Idea' id='work' />
-								<button
-									className='primary'
-									id='project-btn'
-									onClick={() =>
-										this.handleProject('https://crown-zip.herokuapp.com/')
-									}>
-									See
-								</button>
-							</div>
-							<div className='description'>
+					</section>
+					<section id='about'>
+						<div class='about-container'>
+							<div className='skills-container'>
+								<h1>About</h1>
+								<img
+									src={this.state.isLightMode ? aboutDay : aboutNight}
+									alt='Idea'
+									id='image3'
+								/>
 								<div
-									id='text-box-len-project'
-									className={`text-box text-box-len   ${
+									className={`text-box ${
 										this.state.isLightMode === false ? ' dark-text-box' : null
-									}`}>
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-									quas vero ab odio quos unde culpa. Perferendis quae
-									consectetur nesciunt quaerat suscipit sed, eius obcaecati
-									perspiciatis labore itaque unde officia? Lorem ipsum dolor sit
-									amet consectetur adipisicing elit. Sit soluta beatae libero
-									sint. Fugiat aut dolorum animi eveniet molestias ex expedita.
-									Consectetur quaerat veniam placeat sunt dignissimos facilis
-									eius enim.
+									}`}
+									id='text-box'>
+									<p>
+										Narinder has experience in developing React Apps. He has an
+										extensive knowledge of JavaScript, CSS, SASS, HTML, React,
+										React-Router, Redux, Redux-Thunks. He also have significant
+										experience with popular libraries and frameworks such as
+										Bootstrap, Material UI and implementing CSS in JavaScript
+										with Styled component library.
+									</p>
 								</div>
 							</div>
 						</div>
-						<div className='project-all'>
-							<div className='image-container' id='image-container'>
-								<p>Crown-zip. An e-commerce project</p>
-								<img src={work} alt='Idea' id='work' />
-								<button className='primary' id='project-btn'>
-									See
-								</button>
+					</section>
+					<section id='skills'>
+						<h1>Skills</h1>
+						<div class='about-container'>
+							<img
+								src={this.state.isLightMode ? programmimgDay : programmimgNight}
+								alt='Idea'
+								id='image3'
+							/>
+						</div>
+						<div
+							className={`text-box text-box-len   ${
+								this.state.isLightMode === false ? ' dark-text-box' : null
+							}`}>
+							<div className='lan'>
+								<p className='lan-section-first' id='first'>
+									Languages:
+								</p>
+								<span className='lan-section'>
+									<p> Java Script , Python, HTML, CSS, SQL</p>
+								</span>
 							</div>
-							<div className='description'>
-								<div
-									id='text-box-len-project'
-									className={`text-box text-box-len   ${
-										this.state.isLightMode === false ? ' dark-text-box' : null
-									}`}>
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-									quas vero ab odio quos unde culpa. Perferendis quae
-									consectetur nesciunt quaerat suscipit sed, eius obcaecati
-									perspiciatis labore itaque unde officia? Lorem ipsum dolor sit
-									amet consectetur adipisicing elit. Sit soluta beatae libero
-									sint. Fugiat aut dolorum animi eveniet molestias ex expedita.
-									Consectetur quaerat veniam placeat sunt dignissimos facilis
-									eius enim.
+							<div className='lan'>
+								<p className='lan-section-first' id='first'>
+									Libraries:
+								</p>
+								<span className='lan-section'>
+									<p>
+										React, React-Router, React-Redux, Redux-Thunk, Sagas,
+										Material UI, Bootstrap, StyledComponent, CSS-Grid, CSS-Flex
+										Box, SASS
+									</p>
+								</span>
+							</div>
+							<div className='lan'>
+								<p className='lan-section-first' id='first'>
+									Data Base:
+								</p>
+								<span className='lan-section'>
+									<p>SQL Server, MySQL, Postgres, Mongo DB, FireBase, Redise</p>
+								</span>
+							</div>
+							<div className='lan'>
+								<p className='lan-section-first' id='first'>
+									Methodologies:
+								</p>
+								<span className='lan-section'>
+									<p>
+										Agile Software Development, REST API, Software design
+										patterns, Circle CI
+									</p>
+								</span>
+							</div>
+						</div>
+					</section>
+					<section id='projects'>
+						<h1>Projects</h1>
+						<div className='image-container-project'>
+							<img
+								src={this.state.isLightMode ? projectsDay : projectsNight}
+								alt='Idea'
+								id='project'
+							/>
+						</div>
+						<div className='project-container'>
+							<div className='project-all'>
+								<div className='image-container' id='image-container'>
+									<p>Crown-zip. An e-commerce project</p>
+									<img src={work} alt='Idea' id='work' />
+									<button
+										className='primary'
+										id='project-btn'
+										onClick={() =>
+											this.handleProject('https://crown-zip.herokuapp.com/')
+										}>
+										See
+									</button>
+								</div>
+								<div className='description'>
+									<div
+										id='text-box-len-project'
+										className={`text-box text-box-len   ${
+											this.state.isLightMode === false ? ' dark-text-box' : null
+										}`}>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Omnis quas vero ab odio quos unde culpa. Perferendis quae
+										consectetur nesciunt quaerat suscipit sed, eius obcaecati
+										perspiciatis labore itaque unde officia? Lorem ipsum dolor
+										sit amet consectetur adipisicing elit. Sit soluta beatae
+										libero sint. Fugiat aut dolorum animi eveniet molestias ex
+										expedita. Consectetur quaerat veniam placeat sunt
+										dignissimos facilis eius enim.
+									</div>
+								</div>
+							</div>
+							<div className='project-all'>
+								<div className='image-container' id='image-container'>
+									<p>Other UI Projects in Java Script</p>
+									<img src={allProjects} alt='Idea' id='work' />
+									<a href='/projects' className='tag'>
+										<button className='primary' id='project-btn'>
+											See
+										</button>
+									</a>
+								</div>
+								<div className='description'>
+									<div
+										id='text-box-len-project'
+										className={`text-box text-box-len   ${
+											this.state.isLightMode === false ? ' dark-text-box' : null
+										}`}>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Omnis quas vero ab odio quos unde culpa. Perferendis quae
+										consectetur nesciunt quaerat suscipit sed, eius obcaecati
+										perspiciatis labore itaque unde officia? Lorem ipsum dolor
+										sit amet consectetur adipisicing elit. Sit soluta beatae
+										libero sint. Fugiat aut dolorum animi eveniet molestias ex
+										expedita. Consectetur quaerat veniam placeat sunt
+										dignissimos facilis eius enim.
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					{/* <div className='buttons'>
+						{/* <div className='buttons'>
 						<button className='primary'>Primary</button>
 
 						<button className='secondary'>Secondary</button>
@@ -326,59 +341,63 @@ class DarkAndLight extends React.Component {
 							laudantium fugit perspiciatis tempora cumque dolorum?
 						</p>
 					</div> */}
-				</section>
-				<section id='contact'>
-					<h1>Contact</h1>
-					<img
-						src={this.state.isLightMode ? contactDay : contactNight}
-						alt='Idea'
-						id='image3'
-					/>
-					<div className='image-container' id='contact-form'>
-						{this.state.ismailsent === '' ? (
-							<h2>Send Message</h2>
-						) : this.state.ismailsent === true ? (
-							<h2>Message has been sent. Thanks for showing intrest.</h2>
-						) : this.state.ismailsent === false ? (
-							<h2 id='fault'>Somethig missing.</h2>
-						) : null}
-						<p>Name: </p>
-						<input
-							type='text'
-							name='name'
-							onChange={this.handleInputChange}
-							value={this.state.name}
+					</section>
+					<section id='contact'>
+						<h1>Contact</h1>
+						<img
+							src={this.state.isLightMode ? contactDay : contactNight}
+							alt='Idea'
+							id='image3'
 						/>
-						<p>Email:</p>
-						<input
-							type='email'
-							name='email'
-							onChange={this.handleInputChange}
-							value={this.state.email}
-						/>
-						<p>Subject:</p>
-						<input
-							type='text'
-							name='subject'
-							onChange={this.handleInputChange}
-							value={this.state.subject}
-						/>
-						<p>Your Message:</p>
+						<div className='image-container' id='contact-form'>
+							{this.state.ismailsent === '' ? (
+								<h2>Send Message</h2>
+							) : this.state.ismailsent === true ? (
+								<h2>Message has been sent. Thanks for showing intrest.</h2>
+							) : this.state.ismailsent === false ? (
+								<h2 id='fault'>Somethig missing.</h2>
+							) : null}
+							<p>Name: </p>
+							<input
+								type='text'
+								name='name'
+								onChange={this.handleInputChange}
+								value={this.state.name}
+							/>
+							<p>Email:</p>
+							<input
+								type='email'
+								name='email'
+								onChange={this.handleInputChange}
+								value={this.state.email}
+							/>
+							<p>Subject:</p>
+							<input
+								type='text'
+								name='subject'
+								onChange={this.handleInputChange}
+								value={this.state.subject}
+							/>
+							<p>Your Message:</p>
 
-						<textarea
-							id='w3review'
-							name='message'
-							value={this.state.message}
-							rows='4'
-							cols='50'
-							onChange={this.handleInputChange}></textarea>
-						<div className='send-container'>
-							<button className='primary' id='send' onClick={this.handleSubmit}>
-								Send
-							</button>
+							<textarea
+								id='w3review'
+								name='message'
+								value={this.state.message}
+								rows='4'
+								cols='50'
+								onChange={this.handleInputChange}></textarea>
+							<div className='send-container'>
+								<button
+									className='primary'
+									id='send'
+									onClick={this.handleSubmit}>
+									Send
+								</button>
+							</div>
 						</div>
-					</div>
-				</section>
+					</section>
+				</div>
 			</>
 		);
 	}

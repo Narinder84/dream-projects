@@ -27,7 +27,7 @@ class QuoteGenerator extends React.Component {
 		return (
 			<div className='Quote-page'>
 				<div className='home-container'>
-					<a href='/'>Home</a>
+					<a href='/projects'>Home</a>
 				</div>
 				<div className='Quote-section'>
 					{quote ? (

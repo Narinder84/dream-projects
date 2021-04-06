@@ -48,17 +48,20 @@ nav {
 	width: 100vw;
 	background: rgb(255 255 255/ 50%);
 }
-a {
+.na {
 	color: var(--primary-color);
 	margin-right: 25px;
 	text-decoration: none;
 	border-bottom: 3px solid transparent;
 	font-weight: bold;
 }
-a:hover,
-a:focus {
+.na:hover,
+.na:focus {
 	color: var(--on-background);
 	border-bottom: 3px solid;
+}
+.all-section {
+	width: 100vw;
 }
 section {
 	min-height: 100vh;
@@ -71,8 +74,11 @@ h1 {
 	font-family: Caveat, sans-serif;
 	font-size: 100px;
 	margin-bottom: 0;
+	text-decoration: underline;
 }
-
+#tit {
+	text-decoration: none;
+}
 h2 {
 	color: var(--on-background-alt);
 	font-size: 32px;
@@ -275,6 +281,8 @@ input:checked + .slider::before {
 	font-size: 1.3rem;
 }
 .lan-section-first {
+	display: inline-block;
+	width: 27%;
 	font-weight: bolder;
 	text-shadow: 10px, 10px black;
 	color: var(--primary-color);
@@ -307,6 +315,7 @@ input:checked + .slider::before {
 	height: 100vh;
 	padding: 20px;
 }
+
 .description {
 	/* border: green 2px solid; */
 	width: 100%;
@@ -380,4 +389,46 @@ textarea {
 }
 #fault {
 	color: red;
+}
+@media screen and (max-width: 770px) {
+	nav {
+		letter-spacing: 1px;
+		font-size: 1rem;
+		padding: 35px;
+		width: 100vw;
+	}
+	h1 {
+		font-size: 3rem;
+	}
+	.all-section {
+		width: 100vw;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	section {
+		width: 240%;
+	}
+	.image-container {
+		width: 300px;
+	}
+	.text-box-len {
+		width: 90%;
+	}
+	.project-container {
+		flex-direction: column;
+		display: flex;
+		box-sizing: border-box;
+		width: auto;
+		height: 100vh;
+		padding: 20px;
+		align-items: center;
+	}
+	#contact-form {
+		margin-right: 5px;
+	}
+	.text-box {
+		width: 91%;
+	}
 }

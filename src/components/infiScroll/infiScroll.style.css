@@ -44,11 +44,13 @@
 }
 .scroll-page .img-div {
 	box-sizing: border-box;
-
+	width: 500px;
+	height: 600px;
 	margin: 15px 30%;
 }
 .scroll-page .img-div img {
 	width: 100%;
+	height: 100%;
 }
 @media screen and (max-width: 812px) {
 	.scroll-page h1 {

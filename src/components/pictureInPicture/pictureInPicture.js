@@ -32,7 +32,7 @@ class Picture extends React.Component {
 		return (
 			<div className='picture-page'>
 				<div className='home-container'>
-					<a href='/'>Home</a>
+					<a href='/projects'>Home</a>
 				</div>
 				<div className='picture-container'>
 					{this.state.ready ? (

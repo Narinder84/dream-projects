@@ -58,7 +58,7 @@ class JockTeller extends React.Component {
 		return (
 			<div className='container' onLoad={this.handelLoad}>
 				<div className='home-container'>
-					<a href='/'>Home</a>
+					<a href='/projects'>Home</a>
 				</div>
 				<div className='robot' />
 				<div className='jock-page'>

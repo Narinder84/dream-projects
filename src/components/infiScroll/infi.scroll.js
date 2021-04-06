@@ -66,7 +66,7 @@ class InfiScroll extends React.Component {
 		return (
 			<div className='scroll-page'>
 				<div className='home-container'>
-					<a href='/'>Home</a>
+					<a href='/projects'>Home</a>
 				</div>
 				<div className='heading-container'>
 					<h1 className='heading'>Un Splash Infinite Scroll - API</h1>
@@ -74,7 +74,7 @@ class InfiScroll extends React.Component {
 				{this.state.isApiExhausted ? (
 					<div className='loader-continer'>
 						<div className='home-container'>
-							<a href='/'>Home</a>
+							<a href='/projects'>Home</a>
 						</div>
 						<h1>API is Exhausted...Reached to its limit.....Try Later !!!</h1>
 						<div className='loader'>
