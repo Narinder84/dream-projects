@@ -1,12 +1,12 @@
 /** @format */
 
 import React from 'react';
-import im from './img/undraw_feeling_proud_light.svg';
-import proudecoder from './img/undraw_proud_coder_light.svg';
-import conceptualIdea from './img/undraw_conceptual_idea_light.svg';
-import imDark from './img/undraw_feeling_proud_dark.svg';
-import proudecoderDark from './img/undraw_proud_coder_dark.svg';
-import conceptualIdeaDark from './img/undraw_conceptual_idea_dark.svg';
+// import im from './img/undraw_feeling_proud_light.svg';
+// import proudecoder from './img/undraw_proud_coder_light.svg';
+// import conceptualIdea from './img/undraw_conceptual_idea_light.svg';
+// import imDark from './img/undraw_feeling_proud_dark.svg';
+// import proudecoderDark from './img/undraw_proud_coder_dark.svg';
+// import conceptualIdeaDark from './img/undraw_conceptual_idea_dark.svg';
 import reactLogoLight from './img/undraw_react_light.svg';
 import programmimgDay from './img/undraw_programming_forDay.svg';
 import programmimgNight from './img/undraw_programming_forNight.svg';
@@ -18,6 +18,7 @@ import contactNight from './img/undraw_contact_us_night.svg';
 import aboutDay from './img/undraw_about_me_day.svg';
 import aboutNight from './img/undraw_about_me_night.svg';
 import work from './img/Crown-zip.png';
+import smartBrainApp from './img/smart brain.png';
 import allProjects from './img/Allprojrcts.png';
 
 import './darkLight.style.css';
@@ -276,14 +277,51 @@ class DarkAndLight extends React.Component {
 										className={`text-box text-box-len   ${
 											this.state.isLightMode === false ? ' dark-text-box' : null
 										}`}>
-										Lorem ipsum dolor sit amet consectetur adipisicing elit.
-										Omnis quas vero ab odio quos unde culpa. Perferendis quae
-										consectetur nesciunt quaerat suscipit sed, eius obcaecati
-										perspiciatis labore itaque unde officia? Lorem ipsum dolor
-										sit amet consectetur adipisicing elit. Sit soluta beatae
-										libero sint. Fugiat aut dolorum animi eveniet molestias ex
-										expedita. Consectetur quaerat veniam placeat sunt
-										dignissimos facilis eius enim.
+										Crown Cloths – ecommerce app An online shopping app.
+										Resalable UI components are created with class and
+										functional concepts of React. All UIs are created using
+										CSS3, CSS-Grid, and Flex-Box. React-Router is implemented
+										for smooth navigation. Managed state and API calls with
+										Readux-Thunk. State persistence is implemented in the web
+										app with local storage for batter user experience. Optimized
+										app using React-lazy and reselect library with Redux.
+										Deployed on heroku.<br></br> Live project :-
+										https:/crown-zip.herokuapp.com <br></br> Can see code :-
+										https://github.com/Narinder84/masterCrown
+									</div>
+								</div>
+							</div>
+							<div className='project-all'>
+								<div className='image-container' id='image-container'>
+									<p>Smart Brain. Face Recognition app</p>
+									<img src={smartBrainApp} alt='Idea' id='work' />
+									<button
+										className='primary'
+										id='project-btn'
+										onClick={() =>
+											this.handleProject(
+												'https://go-smart-brain-live.herokuapp.com/',
+											)
+										}>
+										See
+									</button>
+								</div>
+								<div className='description'>
+									<div
+										id='text-box-len-project'
+										className={`text-box text-box-len   ${
+											this.state.isLightMode === false ? ' dark-text-box' : null
+										}`}>
+										Smart Brain app - Face recognition app A face recognition
+										app. Back end created with Nodejs Express. Hooked with
+										Postgres. REST API’s methodology used to connect with
+										client. Passwords security managed with hashing technique
+										using bcrypt library. Clarifia API used for face
+										recognition.UI created with React. Deployed on heroku.
+										<br></br> Live project: - Smart Brain App
+										(go-smart-brain-live.herokuapp.com). <br></br> Back –End
+										Code: - https://github.com/Narinder84/server.<br></br> Front
+										-End Code:- https://github.com/Narinder84/smart-brain.
 									</div>
 								</div>
 							</div>
@@ -303,14 +341,14 @@ class DarkAndLight extends React.Component {
 										className={`text-box text-box-len   ${
 											this.state.isLightMode === false ? ' dark-text-box' : null
 										}`}>
-										Lorem ipsum dolor sit amet consectetur adipisicing elit.
-										Omnis quas vero ab odio quos unde culpa. Perferendis quae
-										consectetur nesciunt quaerat suscipit sed, eius obcaecati
-										perspiciatis labore itaque unde officia? Lorem ipsum dolor
-										sit amet consectetur adipisicing elit. Sit soluta beatae
-										libero sint. Fugiat aut dolorum animi eveniet molestias ex
-										expedita. Consectetur quaerat veniam placeat sunt
-										dignissimos facilis eius enim.
+										UIs created with vanilla javaScript.All compnets are create
+										by using HTML5, CSS3, CSS-Grid. No third party libraries
+										usied. These projects are create using AIPs.<br></br>
+										<h3>Project Names :</h3>
+										<li>Picture in Picture</li>
+										<li>Jock Teller</li>
+										<li>Quotes</li>
+										<li>Infinite Scrolling</li>
 									</div>
 								</div>
 							</div>

@@ -16,23 +16,23 @@ class JockTeller extends React.Component {
 		this.button = React.createRef();
 	}
 
-	componentDidMount() {
-		const getVoicesList = () => {
-			const voices = window.speechSynthesis.getVoices();
-			this.setState({ voices: voices });
-		};
-		getVoicesList();
+	// componentDidMount() {
+	// 	const getVoicesList = () => {
+	// 		const voices = window.speechSynthesis.getVoices();
+	// 		this.setState({ voices: voices });
+	// 	};
+	// 	getVoicesList();
 
-		if (speechSynthesis !== undefined) {
-			speechSynthesis.onvoiceschanged = getVoicesList;
-		}
-		console.log('mount======');
-		window.addEventListener('load', (event) => {
-			console.log('page is fully loaded');
+	// 	if (speechSynthesis !== undefined) {
+	// 		speechSynthesis.onvoiceschanged = getVoicesList;
+	// 	}
+	// 	console.log('mount======');
+	// 	window.addEventListener('load', (event) => {
+	// 		console.log('page is fully loaded');
 
-			this.handelLoad();
-		});
-	}
+	// 		this.handelLoad();
+	// 	});
+	// }
 	handelLoad = async () => {
 		let toSpeek = new SpeechSynthesisUtterance(this.state.joke);
 
