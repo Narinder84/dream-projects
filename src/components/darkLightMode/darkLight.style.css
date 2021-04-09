@@ -81,7 +81,7 @@ h1 {
 }
 h2 {
 	color: var(--on-background-alt);
-	font-size: 32px;
+	font-size: 1.5em;
 	font-weight: normal;
 }
 .title-group {
@@ -102,14 +102,14 @@ h2 {
 	padding: 10px 20px;
 	margin-right: 25px;
 	width: auto;
-	height: 40vh;
+	height: 30vh;
 	background: var(--background);
 	box-shadow: var(--box-shadow);
 }
 
 img {
-	height: 300px;
-	width: 300px;
+	height: 200px;
+	width: 200px;
 }
 
 .buttons {
@@ -175,7 +175,7 @@ button:hover:not(.outline) {
 p {
 	margin: 0;
 	line-height: 25px;
-	font-size: 1rem;
+	font-size: 0.7rem;
 }
 .theme-switch-wrapper {
 	display: flex;
