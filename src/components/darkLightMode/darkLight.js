@@ -305,7 +305,7 @@ class DarkAndLight extends React.Component {
 												'https://go-smart-brain-live.herokuapp.com/',
 											)
 										}>
-										Click
+										See
 									</button>
 								</div>
 								<div className='description'>
