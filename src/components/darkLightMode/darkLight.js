@@ -293,7 +293,7 @@ class DarkAndLight extends React.Component {
 							</div>
 							<div className='project-all'>
 								<div className='image-container' id='image-container'>
-									<p>Smart Brain. Face Recognition app</p>
+									<p>Face Recognition app</p>
 									<img src={smartBrainApp} alt='Idea' id='work' />
 									<button
 										className='primary'
