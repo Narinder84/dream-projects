@@ -102,13 +102,13 @@ h2 {
 	padding: 10px 20px;
 	margin-right: 25px;
 	width: auto;
-	height: 30vh;
+	height: 23vh;
 	background: var(--background);
 	box-shadow: var(--box-shadow);
 }
 
 img {
-	height: 200px;
+	height: 100px;
 	width: 200px;
 }
 
