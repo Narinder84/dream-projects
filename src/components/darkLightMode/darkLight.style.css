@@ -178,7 +178,7 @@ button:hover:not(.outline) {
 p {
 	margin: 0;
 	line-height: 20px;
-	font-size: 0.7rem;
+	font-size: 1rem;
 }
 .theme-switch-wrapper {
 	display: flex;
