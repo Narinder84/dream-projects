@@ -102,7 +102,7 @@ h2 {
 	padding: 10px 20px;
 	margin-right: 25px;
 	width: auto;
-	height: 23vh;
+	height: 30vh;
 	background: var(--background);
 	box-shadow: var(--box-shadow);
 }
@@ -174,7 +174,7 @@ button:hover:not(.outline) {
 
 p {
 	margin: 0;
-	line-height: 25px;
+	line-height: 20px;
 	font-size: 0.7rem;
 }
 .theme-switch-wrapper {
