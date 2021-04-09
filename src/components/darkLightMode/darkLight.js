@@ -277,17 +277,19 @@ class DarkAndLight extends React.Component {
 										className={`text-box text-box-len   ${
 											this.state.isLightMode === false ? ' dark-text-box' : null
 										}`}>
-										Crown Cloths – ecommerce app An online shopping app.
-										Resalable UI components are created with class and
-										functional concepts of React. All UIs are created using
-										CSS3, CSS-Grid, and Flex-Box. React-Router is implemented
-										for smooth navigation. Managed state and API calls with
-										Readux-Thunk. State persistence is implemented in the web
-										app with local storage for batter user experience. Optimized
-										app using React-lazy and reselect library with Redux.
-										Deployed on heroku.<br></br> Live project :-
-										https:/crown-zip.herokuapp.com <br></br> Can see code :-
-										https://github.com/Narinder84/masterCrown
+										<p>
+											Crown Cloths – ecommerce app An online shopping app.
+											Resalable UI components are created with class and
+											functional concepts of React. All UIs are created using
+											CSS3, CSS-Grid, and Flex-Box. React-Router is implemented
+											for smooth navigation. Managed state and API calls with
+											Readux-Thunk. State persistence is implemented in the web
+											app with local storage for batter user experience.
+											Optimized app using React-lazy and reselect library with
+											Redux. Deployed on heroku.<br></br> Live project :-
+											https:/crown-zip.herokuapp.com <br></br> Can see code :-
+											https://github.com/Narinder84/masterCrown
+										</p>
 									</div>
 								</div>
 							</div>
@@ -312,16 +314,19 @@ class DarkAndLight extends React.Component {
 										className={`text-box text-box-len   ${
 											this.state.isLightMode === false ? ' dark-text-box' : null
 										}`}>
-										Smart Brain app - Face recognition app A face recognition
-										app. Back end created with Nodejs Express. Hooked with
-										Postgres. REST API’s methodology used to connect with
-										client. Passwords security managed with hashing technique
-										using bcrypt library. Clarifia API used for face
-										recognition.UI created with React. Deployed on heroku.
-										<br></br> Live project: - Smart Brain App
-										(go-smart-brain-live.herokuapp.com). <br></br> Back –End
-										Code: - https://github.com/Narinder84/server.<br></br> Front
-										-End Code:- https://github.com/Narinder84/smart-brain.
+										<p>
+											Smart Brain app - Face recognition app A face recognition
+											app. Back end created with Nodejs Express. Hooked with
+											Postgres. REST API’s methodology used to connect with
+											client. Passwords security managed with hashing technique
+											using bcrypt library. Clarifia API used for face
+											recognition.UI created with React. Deployed on heroku.
+											<br></br> Live project: - Smart Brain App
+											(go-smart-brain-live.herokuapp.com). <br></br> Back –End
+											Code: - https://github.com/Narinder84/server.<br></br>{' '}
+											Front -End Code:-
+											https://github.com/Narinder84/smart-brain.
+										</p>
 									</div>
 								</div>
 							</div>
@@ -341,14 +346,17 @@ class DarkAndLight extends React.Component {
 										className={`text-box text-box-len   ${
 											this.state.isLightMode === false ? ' dark-text-box' : null
 										}`}>
-										UIs created with vanilla javaScript.All compnets are create
-										by using HTML5, CSS3, CSS-Grid. No third party libraries
-										usied. These projects are create using AIPs.<br></br>
-										<h3>Project Names :</h3>
-										<li>Picture in Picture</li>
-										<li>Jock Teller</li>
-										<li>Quotes</li>
-										<li>Infinite Scrolling</li>
+										<p>
+											UIs created with vanilla javaScript.All compnets are
+											create by using HTML5, CSS3, CSS-Grid. No third party
+											libraries usied. These projects are create using AIPs.
+											<br></br>
+											<h3>Project Names :</h3>
+											<li>Picture in Picture</li>
+											<li>Jock Teller</li>
+											<li>Quotes</li>
+											<li>Infinite Scrolling</li>
+										</p>
 									</div>
 								</div>
 							</div>
