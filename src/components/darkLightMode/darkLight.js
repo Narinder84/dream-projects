@@ -1,6 +1,7 @@
 /** @format */
 
 import React from 'react';
+import { sendMail } from './utills';
 // import im from './img/undraw_feeling_proud_light.svg';
 // import proudecoder from './img/undraw_proud_coder_light.svg';
 // import conceptualIdea from './img/undraw_conceptual_idea_light.svg';
@@ -79,16 +80,19 @@ class DarkAndLight extends React.Component {
 	};
 	handleSubmit = async () => {
 		const { name, email, subject, message } = this.state;
+		// sendMail();
 		if (name && email && subject && message) {
+			console.log(name, email, subject, message);
 			return window.Email.send({
-				Host: 'smtp.elasticemail.com',
+				Host: 'smtp.sendgrid.net',
 				Username: 'reacts414@gmail.com',
-				Password: '2E9981303E8EA21CE487B9E09526DFA786FD',
+				Password: 'GMEdhyqQQvqEpVDTELXOaw',
 				To: 'getdev84@gmail.com',
 				From: 'reacts414@gmail.com',
 				Subject: `${subject}`,
 				Body: `You got email from ${name},. The email id is ${email}. And the message is ${message}`,
 			}).then((message) => {
+				console.log(message);
 				message === 'OK'
 					? this.setState({
 							ismailsent: true,
