@@ -262,38 +262,43 @@ class DarkAndLight extends React.Component {
 							/>
 						</div>
 						<div className='project-container'>
-							<div className='project-all'>
-								<div className='image-container' id='image-container'>
-									<p>Crown-zip. An e-commerce project</p>
-									<img src={work} alt='Idea' id='work' />
-									<button
-										className='primary'
-										id='project-btn'
-										onClick={() =>
-											this.handleProject('https://crown-zip.herokuapp.com/')
-										}>
-										See
-									</button>
-								</div>
-								<div className='description'>
-									<div
-										id='text-box-len-project'
-										className={`text-box text-box-len   ${
-											this.state.isLightMode === false ? ' dark-text-box' : null
-										}`}>
-										<p>
-											Crown Cloths – ecommerce app An online shopping app.
-											Resalable UI components are created with class and
-											functional concepts of React. All UIs are created using
-											CSS3, CSS-Grid, and Flex-Box. React-Router is implemented
-											for smooth navigation. Managed state and API calls with
-											Readux-Thunk. State persistence is implemented in the web
-											app with local storage for batter user experience.
-											Optimized app using React-lazy and reselect library with
-											Redux. Deployed on heroku.<br></br> Live project :-
-											https:/crown-zip.herokuapp.com <br></br> Can see code :-
-											https://github.com/Narinder84/masterCrown
-										</p>
+							<div className='project-wrapper'>
+								<div className='project-all'>
+									<div className='image-container' id='image-container'>
+										<p>Crown-zip. An e-commerce project</p>
+										<img src={work} alt='Idea' id='work' />
+										<button
+											className='primary'
+											id='project-btn'
+											onClick={() =>
+												this.handleProject('https://crown-zip.herokuapp.com/')
+											}>
+											See
+										</button>
+									</div>
+									<div className='description'>
+										<div
+											id='text-box-len-project'
+											className={`text-box text-box-len   ${
+												this.state.isLightMode === false
+													? ' dark-text-box'
+													: null
+											}`}>
+											<p>
+												Crown Cloths – ecommerce app An online shopping app.
+												Resalable UI components are created with class and
+												functional concepts of React. All UIs are created using
+												CSS3, CSS-Grid, and Flex-Box. React-Router is
+												implemented for smooth navigation. Managed state and API
+												calls with Readux-Thunk. State persistence is
+												implemented in the web app with local storage for batter
+												user experience. Optimized app using React-lazy and
+												reselect library with Redux. Deployed on heroku.
+												<br></br> Live project :- https:/crown-zip.herokuapp.com{' '}
+												<br></br> Can see code :-
+												https://github.com/Narinder84/masterCrown
+											</p>
+										</div>
 									</div>
 								</div>
 							</div>

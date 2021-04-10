@@ -328,6 +328,7 @@ input:checked + .slider::before {
 	height: auto;
 }
 .project-all {
+	position: relative;
 	display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6, BB7 */
 	display: -ms-flexbox; /* TWEENER - IE 10 */
 	display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
@@ -406,7 +407,9 @@ textarea {
 li {
 	margin: 0;
 }
-
+.project-wrapper {
+	position: absolute;
+}
 @media screen and (max-width: 770px) {
 	nav {
 		letter-spacing: 1px;
