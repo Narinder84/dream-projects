@@ -170,6 +170,7 @@ button:hover:not(.outline) {
 .text-box {
 	width: 40%;
 	text-align: justify;
+	background: #6d6969;
 	background: rgba(0, 0, 0, 50%);
 	/* background: rgb(0 0 0 / 50%); */
 	color: var(--on-primary);
