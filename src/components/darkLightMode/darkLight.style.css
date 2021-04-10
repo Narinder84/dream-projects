@@ -318,8 +318,8 @@ input:checked + .slider::before {
 	box-sizing: border-box;
 	/* border: red 2px solid; */
 	width: 90vw;
-	height: 100vh;
-	padding: 20px;
+	height: 110vh;
+	padding: 50px;
 }
 
 .description {
@@ -329,7 +329,8 @@ input:checked + .slider::before {
 }
 .project-all {
 	display: flex;
-	margin-bottom: 20px;
+
+	margin-bottom: 50px;
 }
 #image-container {
 	display: flex;
