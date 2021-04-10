@@ -381,6 +381,7 @@ textarea {
 	margin-top: 5px;
 }
 #project-btn {
+	height: 30px;
 	outline: none;
 	box-shadow: 2px 2px 2px rgb(87, 85, 85);
 	font-size: 1rem;
