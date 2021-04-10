@@ -329,6 +329,7 @@ input:checked + .slider::before {
 }
 .project-all {
 	display: flex;
+	display: -webkit-flexbox;
 	border: 2px red solid;
 	margin-bottom: 80px;
 }
