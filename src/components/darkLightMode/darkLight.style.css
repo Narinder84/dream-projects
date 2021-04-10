@@ -329,8 +329,8 @@ input:checked + .slider::before {
 }
 .project-all {
 	display: flex;
-
-	margin-bottom: 50px;
+	border: 2px red solid;
+	margin-bottom: 80px;
 }
 #image-container {
 	display: flex;
@@ -385,6 +385,7 @@ textarea {
 	margin-top: 5px;
 }
 #project-btn {
+	margin-top: 5px;
 	height: 30px;
 	outline: none;
 	box-shadow: 2px 2px 2px rgb(87, 85, 85);
