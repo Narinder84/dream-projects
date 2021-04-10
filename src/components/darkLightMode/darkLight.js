@@ -252,6 +252,7 @@ class DarkAndLight extends React.Component {
 							</div>
 						</div>
 					</section>
+					{/* ================== projects======================================================= */}
 					<section id='projects'>
 						<h1>Projects</h1>
 						<div className='image-container-project'>

@@ -311,12 +311,13 @@
 		height: 100%;
 	}
 	.project-container {
+		border: red solid 3px;
 		flex-direction: column;
 		display: flex;
 		box-sizing: border-box;
 		/* border: red 2px solid; */
 		width: 90vw;
-		height: 100vh;
+		height: 110vh;
 		padding: 20px;
 	}
 
