@@ -318,7 +318,7 @@ input:checked + .slider::before {
 	box-sizing: border-box;
 	/* border: red 2px solid; */
 	width: 90vw;
-	height: 120vh;
+	height: 110vh;
 	padding: 50px;
 }
 
@@ -334,7 +334,6 @@ input:checked + .slider::before {
 	display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
 	display: flex;
 	display: flex;
-	border: 5px rgb(10, 10, 10) solid;
 }
 #image-container {
 	display: flex;
