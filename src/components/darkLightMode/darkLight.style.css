@@ -318,7 +318,7 @@ input:checked + .slider::before {
 	box-sizing: border-box;
 	/* border: red 2px solid; */
 	width: 90vw;
-	height: 110vh;
+	height: 90vh;
 	padding: 50px;
 }
 
