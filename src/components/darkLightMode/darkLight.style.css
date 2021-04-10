@@ -328,7 +328,7 @@ input:checked + .slider::before {
 	height: auto;
 }
 .project-all {
-	display: -webkit-flex;
+	display: -webkit-flexbox;
 	display: flex;
 	border: 2px red solid;
 	margin-bottom: 70px;
