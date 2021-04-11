@@ -20,7 +20,7 @@
 	--secondary-color: #03dac5;
 	--on-primary: #000;
 	--on-background: rgba(255, 255, 255, 0.9);
-	--on-background-alt: rgba(255, 255, 255, 0.7);
+	--on-background-alt: rgba(73, 71, 71, 0.7);
 	--background: #070000;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
@@ -172,7 +172,7 @@
 		width: 40%;
 		text-align: justify;
 		opacity: 0.8;
-		background: rgb(107, 100, 100);
+		background: rgb(67, 68, 67);
 		/* background: rgb(0 0 0 / 50%); */
 		color: var(--on-primary);
 		border-radius: 10px;
