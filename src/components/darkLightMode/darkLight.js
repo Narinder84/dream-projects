@@ -1,7 +1,8 @@
 /** @format */
 
 import React from 'react';
-import { sendMail } from './utills';
+import { send } from 'emailjs-com';
+// import { sendMail } from './utills';
 // import im from './img/undraw_feeling_proud_light.svg';
 // import proudecoder from './img/undraw_proud_coder_light.svg';
 // import conceptualIdea from './img/undraw_conceptual_idea_light.svg';
@@ -31,11 +32,14 @@ class DarkAndLight extends React.Component {
 			toggleText: 'Light Mode',
 			isLightMode: true,
 			val: '',
-			name: '',
-			email: '',
-			subject: '',
-			message: '',
+
 			ismailsent: '',
+			toSend: {
+				name: '',
+				email: '',
+				subject: '',
+				message: '',
+			},
 		};
 		this.sliderChecked = React.createRef();
 	}
@@ -76,42 +80,33 @@ class DarkAndLight extends React.Component {
 	};
 	handleInputChange = (e) => {
 		const { name, value } = e.target;
-		this.setState({ [name]: value });
+		const newToSend = { ...this.state.toSend, [name]: value };
+		this.setState({ ...this.state, toSend: newToSend });
 	};
 	handleSubmit = async () => {
-		const { name, email, subject, message } = this.state;
+		const { name, email, subject, message } = this.state.toSend;
+		console.log(this.state);
 		// sendMail();
 		if (name && email && subject && message) {
 			console.log(name, email, subject, message);
-			return window.Email.send({
-				Host: 'smtp.sendgrid.net',
-				Username: 'reacts414@gmail.com',
-				Password: 'GMEdhyqQQvqEpVDTELXOaw',
-				To: 'getdev84@gmail.com',
-				From: 'reacts414@gmail.com',
-				Subject: `${subject}`,
-				Body: `You got email from ${name},. The email id is ${email}. And the message is ${message}`,
-			}).then((message) => {
-				console.log(message);
-				message === 'OK'
-					? this.setState({
-							ismailsent: true,
-							name: '',
-							email: '',
-							subject: '',
-							message: '',
-					  })
-					: this.setState({ ismailsent: false });
-			});
+
+			send(
+				'service_g34bwmw',
+				'template_i2iopti',
+				this.state.toSend,
+
+				'user_nOccccZao1z8VOViku901',
+			)
+				.then((response) => {
+					// console.log('SUCCESS!', response.status, response.text);
+					const values = { name: '', email: '', subject: '', message: '' };
+					this.setState({ ...this.state, ismailsent: true, toSend: values });
+				})
+				.catch((err) => {
+					// console.log('FAILED...', err);
+					this.setState({ ismailsent: false });
+				});
 		}
-		this.setState({ ismailsent: false });
-		// window.Email.send({
-		// 	SecureToken: '1e2b4f1b-5aa0-4c7a-b005-5855a216a4da',
-		// 	To: 'getdev84@gmail.com',
-		// 	From: 'reacts414@gmail.com',
-		// 	Subject: 'This is the subject',
-		// 	Body: 'And this is the body',
-		// }).then((message) => alert(message));
 	};
 	handleProject = (val) => {
 		const url = val;
@@ -121,20 +116,20 @@ class DarkAndLight extends React.Component {
 		console.log(this.state.ismailsent === '');
 		return (
 			<>
-				<div class='theme-switch-wrapper' onChange={this.handleChange}>
+				<div className='theme-switch-wrapper' onChange={this.handleChange}>
 					<span id='toggle-icon'>
-						<span class='toggle-text'>
+						<span className='toggle-text'>
 							{this.state.isLightMode ? `Light Mode` : 'Dark Mode'}
 						</span>
 						{this.state.isLightMode ? (
-							<i class='fas fa-sun' />
+							<i className='fas fa-sun' />
 						) : (
 							<i class='fas fa-moon' />
 						)}
 					</span>
-					<label class='theme-switch'>
+					<label className='theme-switch'>
 						<input ref={this.sliderChecked} type='checkbox' />
-						<div class='slider round' />
+						<div className='slider round' />
 					</label>
 				</div>
 				;
@@ -143,19 +138,19 @@ class DarkAndLight extends React.Component {
 					className={` ${
 						this.state.isLightMode === false ? 'nav-dark' : null
 					} `}>
-					<a class='na' href='#home'>
+					<a className='na' href='#home'>
 						HOME
 					</a>
-					<a class='na' href='#about'>
+					<a className='na' href='#about'>
 						ABOUT
 					</a>
-					<a class='na' href='#skills'>
+					<a className='na' href='#skills'>
 						Skills
 					</a>
-					<a class='na' href='#projects'>
+					<a className='na' href='#projects'>
 						PROJECTS
 					</a>
-					<a class='na' href='#contact'>
+					<a className='na' href='#contact'>
 						CONTACT
 					</a>
 				</nav>
@@ -173,7 +168,7 @@ class DarkAndLight extends React.Component {
 						</div>
 					</section>
 					<section id='about'>
-						<div class='about-container'>
+						<div className='about-container'>
 							<div className='skills-container'>
 								<h1>About</h1>
 								<img
@@ -200,7 +195,7 @@ class DarkAndLight extends React.Component {
 					</section>
 					<section id='skills'>
 						<h1>Skills</h1>
-						<div class='about-container'>
+						<div className='about-container'>
 							<img
 								src={this.state.isLightMode ? programmimgDay : programmimgNight}
 								alt='Idea'
@@ -356,7 +351,7 @@ class DarkAndLight extends React.Component {
 											create by using HTML5, CSS3, CSS-Grid. No third party
 											libraries usied. These projects are create using AIPs.
 											<br></br>
-											<h3>Project Names :</h3>
+											<li className='heading'>Project Names :</li>
 											<li>Picture in Picture</li>
 											<li>Jock Teller</li>
 											<li>Quotes</li>
@@ -366,32 +361,6 @@ class DarkAndLight extends React.Component {
 								</div>
 							</div>
 						</div>
-						{/* <div className='buttons'>
-						<button className='primary'>Primary</button>
-
-						<button className='secondary'>Secondary</button>
-
-						<button className='primary' disabled>
-							Primary
-						</button>
-						<button className='outline'>Outline</button>
-						<button className='secondary outline'>Alt Outline</button>
-						<button className='outline' disabled>
-							Disabled
-						</button>
-					</div>
-					<div
-						className={`text-box ${
-							this.state.isLightMode === false ? ' dark-text-box' : null
-						}`}
-						id='text-box'>
-						<p>
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-							Architecto accusamus, corrupti voluptates, sint libero quis autem
-							labore aliquid pariatur saepe sed alias quisquam suscipit
-							laudantium fugit perspiciatis tempora cumque dolorum?
-						</p>
-					</div> */}
 					</section>
 					<section id='contact'>
 						<h1>Contact</h1>
@@ -413,28 +382,28 @@ class DarkAndLight extends React.Component {
 								type='text'
 								name='name'
 								onChange={this.handleInputChange}
-								value={this.state.name}
+								value={this.state.toSend.name}
 							/>
 							<p>Email:</p>
 							<input
 								type='email'
 								name='email'
 								onChange={this.handleInputChange}
-								value={this.state.email}
+								value={this.state.toSend.email}
 							/>
 							<p>Subject:</p>
 							<input
 								type='text'
 								name='subject'
 								onChange={this.handleInputChange}
-								value={this.state.subject}
+								value={this.state.toSend.subject}
 							/>
 							<p>Your Message:</p>
 
 							<textarea
 								id='w3review'
 								name='message'
-								value={this.state.message}
+								value={this.state.toSend.message}
 								rows='4'
 								cols='50'
 								onChange={this.handleInputChange}></textarea>
@@ -455,27 +424,3 @@ class DarkAndLight extends React.Component {
 }
 
 export default DarkAndLight;
-
-{
-	/* <div className='theme-switch-wrapper'>
-	<span className='toggle-icon'>
-		<span className='toggle-text'>Light Mode</span>
-		<i className='fas fa-sun' />
-	</span>
-	<label className='theme-switch'>
-		<input type='check-box' className='check-box' />
-		<div className='slider round '> </div>
-	</label>
-</div>;
-
-<div class='theme-switch-wrapper'>
-	<span id='toggle-icon'>
-		<span class='toggle-text'>Light Mode</span>
-		<i class='fas fa-sun' />
-	</span>
-	<label class='theme-switch'>
-		<input type='checkbox' />
-		<div class='slider round' />
-	</label>
-</div>; */
-}

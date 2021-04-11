@@ -86,7 +86,10 @@
 		font-size: 1.5em;
 		font-weight: normal;
 	}
-	h3 {
+	.heading {
+		font-weight: bolder;
+		list-style: none;
+		border-bottom: 2px solid whitesmoke;
 		margin: 0;
 	}
 	.title-group {
