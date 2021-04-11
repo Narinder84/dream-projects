@@ -373,7 +373,9 @@ class DarkAndLight extends React.Component {
 							{this.state.ismailsent === '' ? (
 								<h2>Send Message</h2>
 							) : this.state.ismailsent === true ? (
-								<h2>Message has been sent. Thanks for showing intrest.</h2>
+								<h2 id='success'>
+									Message has been sent. Thanks for showing intrest.
+								</h2>
 							) : this.state.ismailsent === false ? (
 								<h2 id='fault'>Somethig missing.</h2>
 							) : null}

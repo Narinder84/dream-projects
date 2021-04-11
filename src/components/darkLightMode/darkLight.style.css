@@ -402,6 +402,9 @@ textarea {
 #fault {
 	color: red;
 }
+#success {
+	color: #107fda;
+}
 li {
 	margin: 0;
 }
