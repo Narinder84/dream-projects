@@ -89,7 +89,8 @@
 	.heading {
 		font-weight: bolder;
 		list-style: none;
-		border-bottom: 2px solid whitesmoke;
+		color: var(--on-primary);
+		border-bottom: 2px solid var(--on-primary);
 		margin: 0;
 	}
 	.title-group {
