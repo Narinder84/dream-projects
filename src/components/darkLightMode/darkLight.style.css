@@ -21,7 +21,7 @@
 	--on-primary: #000;
 	--on-background: rgba(255, 255, 255, 0.9);
 	--on-background-alt: rgba(255, 255, 255, 0.7);
-	--background: #121212;
+	--background: #070000;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
 	html {
@@ -48,7 +48,7 @@
 		padding: 25px;
 		width: 100vw;
 
-		background: rgb(255 255 255/ 50%);
+		background: var(--background);
 	}
 	.na {
 		color: var(--primary-color);
@@ -171,8 +171,9 @@
 	.text-box {
 		width: 40%;
 		text-align: justify;
+		opacity: 0.8;
 		background: rgb(107, 100, 100);
-		background: rgb(0 0 0 / 50%);
+		/* background: rgb(0 0 0 / 50%); */
 		color: var(--on-primary);
 		border-radius: 10px;
 		padding: 30px;
