@@ -24,6 +24,7 @@ import smartBrainApp from './img/smart brain.png';
 import allProjects from './img/Allprojrcts.png';
 
 import './darkLight.style.css';
+import LightDarkNave from './darkLightComponents/lightDarkNave';
 
 class DarkAndLight extends React.Component {
 	constructor(props) {
@@ -116,44 +117,11 @@ class DarkAndLight extends React.Component {
 		console.log(this.state.ismailsent === '');
 		return (
 			<>
-				<div className='theme-switch-wrapper' onChange={this.handleChange}>
-					<span id='toggle-icon'>
-						<span className='toggle-text'>
-							{this.state.isLightMode ? `Light Mode` : 'Dark Mode'}
-						</span>
-						{this.state.isLightMode ? (
-							<i className='fas fa-sun' />
-						) : (
-							<i class='fas fa-moon' />
-						)}
-					</span>
-					<label className='theme-switch'>
-						<input ref={this.sliderChecked} type='checkbox' />
-						<div className='slider round' />
-					</label>
-				</div>
-				;
-				<nav
-					id='nav'
-					className={` ${
-						this.state.isLightMode === false ? 'nav-dark' : null
-					} `}>
-					<a className='na' href='#home'>
-						HOME
-					</a>
-					<a className='na' href='#about'>
-						ABOUT
-					</a>
-					<a className='na' href='#skills'>
-						Skills
-					</a>
-					<a className='na' href='#projects'>
-						PROJECTS
-					</a>
-					<a className='na' href='#contact'>
-						CONTACT
-					</a>
-				</nav>
+				<LightDarkNave
+					isLightMode={this.state.isLightMode}
+					sliderCheckedRef={this.sliderChecked}
+					handleChange={this.handleChange}
+				/>
 				<div className='all-sections'>
 					<section id='home'>
 						<div className='title-group' id='tit'>
