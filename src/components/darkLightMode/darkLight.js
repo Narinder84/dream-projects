@@ -113,7 +113,7 @@ class DarkAndLight extends React.Component {
 					{/* ================== projects======================================================= */}
 					<LightDarkProjectSection
 						isLightMode={this.state.isLightMode}
-						handleChange={this.handleChange}
+						handleProject={this.handleProject}
 					/>
 					<LightDarkConstactSection
 						ismailsent={this.state.ismailsent}
