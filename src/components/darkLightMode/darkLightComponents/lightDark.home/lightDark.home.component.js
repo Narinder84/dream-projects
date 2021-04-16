@@ -1,6 +1,6 @@
 /** @format */
 
-import react from 'react';
+import React from 'react';
 
 import reactLogoLight from '../../img/undraw_react_light.svg';
 import reactLogDark from '../../img/undraw_react_y7wq.svg';

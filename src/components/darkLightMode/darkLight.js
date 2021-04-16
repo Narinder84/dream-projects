@@ -2,26 +2,6 @@
 
 import React from 'react';
 import { send } from 'emailjs-com';
-// import { sendMail } from './utills';
-// import im from './img/undraw_feeling_proud_light.svg';
-// import proudecoder from './img/undraw_proud_coder_light.svg';
-// import conceptualIdea from './img/undraw_conceptual_idea_light.svg';
-// import imDark from './img/undraw_feeling_proud_dark.svg';
-// import proudecoderDark from './img/undraw_proud_coder_dark.svg';
-// import conceptualIdeaDark from './img/undraw_conceptual_idea_dark.svg';
-import reactLogoLight from './img/undraw_react_light.svg';
-import programmimgDay from './img/undraw_programming_forDay.svg';
-import programmimgNight from './img/undraw_programming_forNight.svg';
-import recatLogDark from './img/undraw_react_y7wq.svg';
-import projectsDay from './img/undraw_Project_completed_day.svg';
-import projectsNight from './img/undraw_Project_completed_night.svg';
-import contactDay from './img/undraw_contact_us_day.svg';
-import contactNight from './img/undraw_contact_us_night.svg';
-import aboutDay from './img/undraw_about_me_day.svg';
-import aboutNight from './img/undraw_about_me_night.svg';
-import work from './img/Crown-zip.png';
-import smartBrainApp from './img/smart brain.png';
-import allProjects from './img/Allprojrcts.png';
 
 import './darkLight.style.css';
 import LightDarkNave from './darkLightComponents/lightDark.nav/lightDarkNave';

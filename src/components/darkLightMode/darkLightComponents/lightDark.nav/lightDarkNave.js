@@ -1,6 +1,6 @@
 /** @format */
 
-import react from 'react';
+import React from 'react';
 
 import './lightDark.nav.styles.css';
 

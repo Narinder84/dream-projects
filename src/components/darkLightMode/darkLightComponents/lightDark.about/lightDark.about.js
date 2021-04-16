@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-import './lightDark.home.styles.css';
+import './lightDark.about.styles.css';
 import aboutDay from '../../img/undraw_about_me_day.svg';
 import aboutNight from '../../img/undraw_about_me_night.svg';
 
