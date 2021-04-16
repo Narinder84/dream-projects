@@ -1,0 +1,92 @@
+/** @format */
+
+.theme-switch-wrapper span {
+	margin-right: 10px;
+	font-size: 1rem;
+}
+
+.toggle-text {
+	position: relative;
+	top: -4px;
+	right: 5px;
+	color: var(--on-background);
+}
+
+.theme-switch {
+	display: inline-block;
+	height: 34px;
+	position: relative;
+	width: 60px;
+}
+
+.theme-switch input {
+	display: none;
+}
+.slider.round {
+	border-radius: 34px;
+}
+
+.slider.round::before {
+	border-radius: 50%;
+}
+
+.slider {
+	background: rgb(233, 103, 103);
+	bottom: 0;
+	cursor: pointer;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transition: 0.4s;
+}
+
+.slider::before {
+	background: #fff;
+	bottom: 4px;
+	content: '';
+	height: 26px;
+	left: 4px;
+	position: absolute;
+	transition: 0.4s;
+	width: 26px;
+}
+
+input:checked + .slider {
+	background: var(--primary-color);
+}
+
+input:checked + .slider::before {
+	transform: translateX(26px);
+}
+
+nav {
+	top: 0;
+	font-family: Oswald, sans-serif;
+	z-index: 10;
+	position: fixed;
+	font-size: 20px;
+	letter-spacing: 3px;
+	padding: 25px;
+	width: 100vw;
+
+	background: var(--background);
+}
+
+.na {
+	color: var(--primary-color);
+	margin-right: 25px;
+	text-decoration: none;
+	border-bottom: 3px solid transparent;
+	font-weight: bold;
+}
+.na:hover,
+.na:focus {
+	color: var(--on-background);
+	border-bottom: 3px solid;
+}
+
+.fas {
+	font-size: 30px;
+	margin-right: 5px;
+}

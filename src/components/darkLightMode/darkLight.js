@@ -24,7 +24,12 @@ import smartBrainApp from './img/smart brain.png';
 import allProjects from './img/Allprojrcts.png';
 
 import './darkLight.style.css';
-import LightDarkNave from './darkLightComponents/lightDarkNave';
+import LightDarkNave from './darkLightComponents/lightDark.nav/lightDarkNave';
+import LightDarkHomeSection from './darkLightComponents/lightDark.home/lightDark.home.component';
+import LightDarkAboutSection from './darkLightComponents/lightDark.about/lightDark.about';
+import LightDarkSkillsSection from './darkLightComponents/lightDarkSkills/lightDarkSkills.component';
+import LightDarkProjectSection from './darkLightComponents/lightDark.project/lightDark.project.component';
+import LightDarkConstactSection from './darkLightComponents/lightDark.contacts/lightDark.contacts.component';
 
 class DarkAndLight extends React.Component {
 	constructor(props) {
@@ -114,7 +119,6 @@ class DarkAndLight extends React.Component {
 		window.open(url);
 	};
 	render() {
-		console.log(this.state.ismailsent === '');
 		return (
 			<>
 				<LightDarkNave
@@ -123,270 +127,21 @@ class DarkAndLight extends React.Component {
 					handleChange={this.handleChange}
 				/>
 				<div className='all-sections'>
-					<section id='home'>
-						<div className='title-group' id='tit'>
-							<h1>Hi,welcome to NARINDER'S personal website. </h1>
-							<h2> React Developer.</h2>
-
-							<img
-								src={this.state.isLightMode ? reactLogoLight : recatLogDark}
-								alt='Idea'
-								id='image3'
-							/>
-						</div>
-					</section>
-					<section id='about'>
-						<div className='about-container'>
-							<div className='skills-container'>
-								<h1>About</h1>
-								<img
-									src={this.state.isLightMode ? aboutDay : aboutNight}
-									alt='Idea'
-									id='image3'
-								/>
-								<div
-									className={`text-box ${
-										this.state.isLightMode === false ? ' dark-text-box' : null
-									}`}
-									id='text-box'>
-									<p>
-										Narinder has experience in developing React Apps. He has an
-										extensive knowledge of JavaScript, CSS, SASS, HTML, React,
-										React-Router, Redux, Redux-Thunks. He also have significant
-										experience with popular libraries and frameworks such as
-										Bootstrap, Material UI and implementing CSS in JavaScript
-										with Styled component library.
-									</p>
-								</div>
-							</div>
-						</div>
-					</section>
-					<section id='skills'>
-						<h1>Skills</h1>
-						<div className='about-container'>
-							<img
-								src={this.state.isLightMode ? programmimgDay : programmimgNight}
-								alt='Idea'
-								id='image3'
-							/>
-						</div>
-						<div
-							className={`text-box text-box-len   ${
-								this.state.isLightMode === false ? ' dark-text-box' : null
-							}`}>
-							<div className='lan'>
-								<p className='lan-section-first' id='first'>
-									Languages:
-								</p>
-								<span className='lan-section'>
-									<p> Java Script , Python, HTML, CSS, SQL</p>
-								</span>
-							</div>
-							<div className='lan'>
-								<p className='lan-section-first' id='first'>
-									Libraries:
-								</p>
-								<span className='lan-section'>
-									<p>
-										React, React-Router, React-Redux, Redux-Thunk, Sagas,
-										Material UI, Bootstrap, StyledComponent, CSS-Grid, CSS-Flex
-										Box, SASS
-									</p>
-								</span>
-							</div>
-							<div className='lan'>
-								<p className='lan-section-first' id='first'>
-									Data Base:
-								</p>
-								<span className='lan-section'>
-									<p>SQL Server, MySQL, Postgres, Mongo DB, FireBase, Redise</p>
-								</span>
-							</div>
-							<div className='lan'>
-								<p className='lan-section-first' id='first'>
-									Methodologies:
-								</p>
-								<span className='lan-section'>
-									<p>
-										Agile Software Development, REST API, Software design
-										patterns, Circle CI
-									</p>
-								</span>
-							</div>
-						</div>
-					</section>
+					<LightDarkHomeSection isLightMode={this.state.ismailsent} />
+					<LightDarkAboutSection isLightMode={this.state.isLightMode} />
+					<LightDarkSkillsSection isLightMode={this.state.isLightMode} />
 					{/* ================== projects======================================================= */}
-					<section id='projects'>
-						<h1>Projects</h1>
-						<div className='image-container-project'>
-							<img
-								src={this.state.isLightMode ? projectsDay : projectsNight}
-								alt='Idea'
-								id='project'
-							/>
-						</div>
-						<div className='project-container'>
-							<div className='project-all'>
-								<div className='image-container' id='image-container'>
-									<p>Crown-zip. An e-commerce project</p>
-									<img src={work} alt='Idea' id='work' />
-									<button
-										className='primary'
-										id='project-btn'
-										onClick={() =>
-											this.handleProject('https://crown-zip.herokuapp.com/')
-										}>
-										See
-									</button>
-								</div>
-								<div className='description'>
-									<div
-										id='text-box-len-project'
-										className={`text-box text-box-len   ${
-											this.state.isLightMode === false ? ' dark-text-box' : null
-										}`}>
-										<p>
-											Crown Cloths – ecommerce app An online shopping app.
-											Resalable UI components are created with class and
-											functional concepts of React. All UIs are created using
-											CSS3, CSS-Grid, and Flex-Box. React-Router is implemented
-											for smooth navigation. Managed state and API calls with
-											Readux-Thunk. State persistence is implemented in the web
-											app with local storage for batter user experience.
-											Optimized app using React-lazy and reselect library with
-											Redux. Deployed on heroku.<br></br> Live project :-
-											https:/crown-zip.herokuapp.com <br></br> Can see code :-
-											https://github.com/Narinder84/masterCrown
-										</p>
-									</div>
-								</div>
-							</div>
-							<div className='project-all'>
-								<div className='image-container' id='image-container'>
-									<p>Face Recognition app</p>
-									<img src={smartBrainApp} alt='Idea' id='work' />
-									<button
-										className='primary'
-										id='project-btn'
-										onClick={() =>
-											this.handleProject(
-												'https://go-smart-brain-live.herokuapp.com/',
-											)
-										}>
-										See
-									</button>
-								</div>
-								<div className='description'>
-									<div
-										id='text-box-len-project'
-										className={`text-box text-box-len   ${
-											this.state.isLightMode === false ? ' dark-text-box' : null
-										}`}>
-										<p>
-											Smart Brain app - Face recognition app A face recognition
-											app. Back end created with Nodejs Express. Hooked with
-											Postgres. REST API’s methodology used to connect with
-											client. Passwords security managed with hashing technique
-											using bcrypt library. Clarifia API used for face
-											recognition.UI created with React. Deployed on heroku.
-											<br></br> Live project: - Smart Brain App
-											(go-smart-brain-live.herokuapp.com). <br></br> Back –End
-											Code: - https://github.com/Narinder84/server.<br></br>{' '}
-											Front -End Code:-
-											https://github.com/Narinder84/smart-brain.
-										</p>
-									</div>
-								</div>
-							</div>
-							<div className='project-all'>
-								<div className='image-container' id='image-container'>
-									<p>Other UI Projects in Java Script</p>
-									<img src={allProjects} alt='Idea' id='work' />
-									<a href='/projects' className='tag'>
-										<button className='primary' id='project-btn'>
-											See
-										</button>
-									</a>
-								</div>
-								<div className='description'>
-									<div
-										id='text-box-len-project'
-										className={`text-box text-box-len   ${
-											this.state.isLightMode === false ? ' dark-text-box' : null
-										}`}>
-										<p>
-											UIs created with vanilla javaScript.All compnets are
-											create by using HTML5, CSS3, CSS-Grid. No third party
-											libraries usied. These projects are create using AIPs.
-											<br></br>
-											<li className='heading'>Project Names :</li>
-											<li>Picture in Picture</li>
-											<li>Jock Teller</li>
-											<li>Quotes</li>
-											<li>Infinite Scrolling</li>
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
-					<section id='contact'>
-						<h1>Contact</h1>
-						<img
-							src={this.state.isLightMode ? contactDay : contactNight}
-							alt='Idea'
-							id='image3'
-						/>
-						<div className='image-container' id='contact-form'>
-							{this.state.ismailsent === '' ? (
-								<h2>Send Message</h2>
-							) : this.state.ismailsent === true ? (
-								<h2 id='success'>
-									Message has been sent. Thanks for showing intrest.
-								</h2>
-							) : this.state.ismailsent === false ? (
-								<h2 id='fault'>Somethig missing.</h2>
-							) : null}
-							<p>Name: </p>
-							<input
-								type='text'
-								name='name'
-								onChange={this.handleInputChange}
-								value={this.state.toSend.name}
-							/>
-							<p>Email:</p>
-							<input
-								type='email'
-								name='email'
-								onChange={this.handleInputChange}
-								value={this.state.toSend.email}
-							/>
-							<p>Subject:</p>
-							<input
-								type='text'
-								name='subject'
-								onChange={this.handleInputChange}
-								value={this.state.toSend.subject}
-							/>
-							<p>Your Message:</p>
-
-							<textarea
-								id='w3review'
-								name='message'
-								value={this.state.toSend.message}
-								rows='4'
-								cols='50'
-								onChange={this.handleInputChange}></textarea>
-							<div className='send-container'>
-								<button
-									className='primary'
-									id='send'
-									onClick={this.handleSubmit}>
-									Send
-								</button>
-							</div>
-						</div>
-					</section>
+					<LightDarkProjectSection
+						isLightMode={this.state.isLightMode}
+						handleChange={this.handleChange}
+					/>
+					<LightDarkConstactSection
+						ismailsent={this.state.ismailsent}
+						handleInputChange={this.handleInputChange}
+						toSend={this.state.toSend}
+						handleSubmit={this.handleSubmit}
+						isLightMode={this.state.isLightMode}
+					/>
 				</div>
 			</>
 		);

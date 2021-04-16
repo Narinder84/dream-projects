@@ -2,6 +2,8 @@
 
 import react from 'react';
 
+import './lightDark.nav.styles.css';
+
 const LightDarkNave = ({ handleChange, isLightMode, sliderCheckedRef }) => {
 	return (
 		<>

@@ -1,0 +1,47 @@
+/** @format */
+
+.about-container {
+	display: flex;
+}
+
+img {
+	height: 100px;
+	width: 200px;
+}
+
+.text-box {
+	width: 40%;
+	text-align: justify;
+	opacity: 0.8;
+	background: rgb(67, 68, 67);
+	/* background: rgb(0 0 0 / 50%); */
+	color: var(--on-primary);
+	border-radius: 10px;
+	padding: 30px;
+}
+
+.dark-text-box {
+	background-color: rgb(255 255 255/50%);
+}
+
+.lan {
+	display: flex;
+
+	width: 100%;
+
+	justify-content: space-between;
+}
+
+.lan-section p {
+	width: 80%;
+	margin: 0;
+	line-height: 25px;
+	font-size: 1.3rem;
+}
+.lan-section-first {
+	display: inline-block;
+	width: 27%;
+	font-weight: bolder;
+
+	color: var(--primary-color);
+}

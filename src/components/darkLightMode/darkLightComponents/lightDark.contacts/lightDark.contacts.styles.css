@@ -1,0 +1,80 @@
+/** @format */
+
+.form-p {
+	font-weight: bold;
+}
+
+#hd {
+	color: var(--on-primary);
+}
+
+#contact {
+	height: 150vh;
+}
+h1 {
+	font-family: Caveat, sans-serif;
+	font-size: 90px;
+	margin-bottom: 0;
+	text-decoration: underline;
+}
+img {
+	height: 100px;
+	width: 200px;
+}
+.image-container {
+	border: 1px solid var(--secondary-color);
+	border-radius: 10px;
+	padding: 10px 20px;
+	margin-right: 25px;
+	width: auto;
+	height: 29vh;
+	background: var(--background);
+	box-shadow: var(--box-shadow);
+}
+
+#contact-form {
+	margin-top: 0;
+	width: 100vh;
+	height: auto;
+	color: var(--primary-color);
+}
+#success {
+	color: #107fda;
+}
+#fault {
+	color: red;
+}
+.send-container {
+	display: flex;
+	width: 100%;
+	justify-content: flex-end;
+}
+
+.primary {
+	background: var(--primary-color);
+	color: var(--on-primary);
+}
+
+#send {
+	outline: none;
+	box-shadow: 1px 1px 1px rgb(151, 149, 149);
+	font-size: 1.2rem;
+}
+#send:active {
+	box-shadow: inset 0px 0px 0px rgb(248, 173, 173);
+	font-size: 1.2rem;
+}
+#hd {
+	padding-top: 10px;
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: var(--on-background);
+	margin-bottom: 10px;
+}
+
+.hd {
+	padding-top: 10px;
+	margin-bottom: 10px;
+	font-size: 1.2rem;
+	color: var(--on-background);
+}

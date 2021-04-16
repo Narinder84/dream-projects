@@ -1,0 +1,22 @@
+/** @format */
+
+.title-group {
+	text-align: center;
+}
+
+#tit {
+	text-decoration: none;
+}
+h1 {
+	font-size: 3rem;
+}
+
+h2 {
+	color: var(--on-background);
+	font-size: 1.5em;
+	font-weight: normal;
+}
+img {
+	height: 100px;
+	width: 200px;
+}
