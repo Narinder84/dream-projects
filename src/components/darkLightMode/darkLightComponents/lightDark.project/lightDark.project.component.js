@@ -97,14 +97,15 @@ const LightDarkProjectSection = ({ isLightMode, handleProject }) => {
 					<div className='image-container' id='image-container'>
 						<p>Other UI Projects in Java Script</p>
 						<img src={allProjects} alt='Idea' id='work' />
-						<a href='/projects' className='tag'>
-							<div className='btn-wr'>
+						<div className='btn-wr'>
+							<a href='/projects' className='tag'>
 								<button className='primary' id='project-btn'>
 									Live
 								</button>
-							</div>
-						</a>
+							</a>
+						</div>
 					</div>
+
 					<div className='description'>
 						<div
 							id='text-box-len-project'

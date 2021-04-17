@@ -34,17 +34,15 @@ h1 {
 	padding: 20px;
 }
 .project-all {
-	border: 2px solid red;
 	display: flex;
 	margin-bottom: 20px;
 }
-
+.image-container {
+}
 #image-container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	border: 10px green solid;
-	width: 300px;
 }
 .primary {
 	background: var(--primary-color);
