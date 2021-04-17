@@ -22,7 +22,7 @@ const LightDarkProjectSection = ({ isLightMode, handleProject }) => {
 			</div>
 			<div className='project-container'>
 				<div className='project-all'>
-					<div className='image-container' id='image-container'>
+					<div className='image-container pro' id='image-container'>
 						<p>Crown-zip. An e-commerce project</p>
 						<img src={work} alt='Idea' id='work' />
 						<div className='btn-wr'>
@@ -58,7 +58,7 @@ const LightDarkProjectSection = ({ isLightMode, handleProject }) => {
 					</div>
 				</div>
 				<div className='project-all'>
-					<div className='image-container' id='image-container'>
+					<div className='image-container pro' id='image-container'>
 						<p>Face Recognition app</p>
 						<img src={smartBrainApp} alt='Idea' id='work' />
 						<div className='btn-wr'>

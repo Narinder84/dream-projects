@@ -8,7 +8,7 @@
 	align-items: center;
 	margin-top: 70px;
 	min-width: 98.5vw;
-	height: 210vh;
+	height: 230vh;
 }
 
 h1 {
@@ -34,16 +34,17 @@ h1 {
 	padding: 20px;
 }
 .project-all {
+	border: 2px solid red;
 	display: flex;
 	margin-bottom: 20px;
 }
-.image-container {
-	width: 300px;
-}
+
 #image-container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	border: 10px green solid;
+	width: 300px;
 }
 .primary {
 	background: var(--primary-color);
