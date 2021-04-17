@@ -11,7 +11,7 @@ const HomeSection = ({ isLightMode }) => {
 		<>
 			<section id='home'>
 				<div className='title-group' id='tit'>
-					<h1>Hi,welcome to NARINDER'S personal website. </h1>
+					<h1 id='h'>Hi,welcome to NARINDER'S personal website. </h1>
 					<h2 className='all'> React Developer.</h2>
 
 					<img
