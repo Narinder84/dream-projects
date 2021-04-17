@@ -54,13 +54,7 @@ img {
 	color: var(--primary-color);
 }
 @media screen and (max-width: 812px) {
-	#skills {
-		height: 110vh;
-	}
-	.lan {
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
-		align-items: flex-start;
+	body {
+		padding-left: 2px;
 	}
 }

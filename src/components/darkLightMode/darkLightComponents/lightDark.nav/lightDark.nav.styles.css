@@ -116,10 +116,8 @@ nav a {
 	border-bottom: 3px solid;
 }
 @media screen and (max-width: 812px) {
-	body {
-		width: 100vw;
-	}
 	nav {
+		right: 75px;
 		flex-direction: column-reverse;
 		letter-spacing: normal;
 		padding-left: 0px;
