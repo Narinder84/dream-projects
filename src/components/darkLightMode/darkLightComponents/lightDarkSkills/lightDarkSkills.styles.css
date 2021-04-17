@@ -55,7 +55,7 @@ img {
 }
 @media screen and (max-width: 812px) {
 	#skills {
-		height: 80vh;
+		height: 50vh;
 	}
 	.lan {
 		display: flex;
