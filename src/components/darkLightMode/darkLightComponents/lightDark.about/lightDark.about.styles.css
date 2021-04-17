@@ -1,5 +1,14 @@
 /** @format */
+#about {
+	box-sizing: border-box;
 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 70px;
+	min-width: 98.5vw;
+	height: 80vh;
+}
 .about-container {
 	display: flex;
 }
@@ -20,6 +29,10 @@ img {
 	height: 100px;
 	width: 200px;
 }
+#text-box {
+	width: 50%;
+	line-height: 25px;
+}
 .text-box {
 	width: 40%;
 	text-align: justify;
@@ -32,4 +45,10 @@ img {
 }
 .dark-text-box {
 	background-color: rgb(255 255 255/50%);
+}
+
+@media screen and (max-width: 770px) {
+	#about {
+		height: 110vh;
+	}
 }

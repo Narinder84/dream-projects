@@ -1,5 +1,16 @@
 /** @format */
 
+#skills {
+	box-sizing: border-box;
+	flex-direction: column;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 70px;
+	min-width: 98.5vw;
+	height: 80vh;
+}
+
 .about-container {
 	display: flex;
 }
@@ -11,6 +22,7 @@ img {
 
 .text-box {
 	width: 40%;
+
 	text-align: justify;
 	opacity: 0.8;
 	background: rgb(67, 68, 67);
@@ -26,22 +38,29 @@ img {
 
 .lan {
 	display: flex;
-
+	align-items: center;
 	width: 100%;
-
-	justify-content: space-between;
 }
 
 .lan-section p {
-	width: 80%;
 	margin: 0;
 	line-height: 25px;
-	font-size: 1.3rem;
 }
 .lan-section-first {
 	display: inline-block;
-	width: 27%;
+	width: 200px;
 	font-weight: bolder;
 
 	color: var(--primary-color);
+}
+@media screen and (max-width: 812px) {
+	#skills {
+		height: 110vh;
+	}
+	.lan {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
 }

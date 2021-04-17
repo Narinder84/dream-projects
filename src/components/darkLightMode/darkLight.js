@@ -93,6 +93,7 @@ class DarkAndLight extends React.Component {
 					this.setState({ ismailsent: false });
 				});
 		}
+		this.setState({ ismailsent: false });
 	};
 	handleProject = (val) => {
 		const url = val;
@@ -106,23 +107,20 @@ class DarkAndLight extends React.Component {
 					sliderCheckedRef={this.sliderChecked}
 					handleChange={this.handleChange}
 				/>
-				<div className='all-sections'>
-					<LightDarkHomeSection isLightMode={this.state.ismailsent} />
-					<LightDarkAboutSection isLightMode={this.state.isLightMode} />
-					<LightDarkSkillsSection isLightMode={this.state.isLightMode} />
-					{/* ================== projects======================================================= */}
-					<LightDarkProjectSection
-						isLightMode={this.state.isLightMode}
-						handleProject={this.handleProject}
-					/>
-					<LightDarkConstactSection
-						ismailsent={this.state.ismailsent}
-						handleInputChange={this.handleInputChange}
-						toSend={this.state.toSend}
-						handleSubmit={this.handleSubmit}
-						isLightMode={this.state.isLightMode}
-					/>
-				</div>
+				<LightDarkHomeSection isLightMode={this.state.ismailsent} />
+				<LightDarkAboutSection isLightMode={this.state.isLightMode} />
+				<LightDarkSkillsSection isLightMode={this.state.isLightMode} />
+				<LightDarkProjectSection
+					isLightMode={this.state.isLightMode}
+					handleProject={this.handleProject}
+				/>
+				<LightDarkConstactSection
+					ismailsent={this.state.ismailsent}
+					handleInputChange={this.handleInputChange}
+					toSend={this.state.toSend}
+					handleSubmit={this.handleSubmit}
+					isLightMode={this.state.isLightMode}
+				/>
 			</>
 		);
 	}

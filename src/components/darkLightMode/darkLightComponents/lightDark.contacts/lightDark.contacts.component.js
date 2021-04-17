@@ -22,17 +22,19 @@ const LightDarkConstactSection = ({
 				id='image3'
 			/>
 			<div className='image-container' id='contact-form'>
-				{ismailsent === '' ? (
-					<p id='hd'>Send Message</p>
-				) : ismailsent === true ? (
-					<p className='hd' id='success'>
-						Message has been sent. Thanks for showing intrest.
-					</p>
-				) : ismailsent === false ? (
-					<p className='hd' id='fault'>
-						Somethig missing.
-					</p>
-				) : null}
+				<div className='message-container'>
+					{ismailsent === '' ? (
+						<p id='hd'>Send Message</p>
+					) : ismailsent === true ? (
+						<p className='hd' id='success'>
+							Message has been sent. Thanks for showing intrest.
+						</p>
+					) : ismailsent === false ? (
+						<p className='hd' id='fault'>
+							Somethig missing.
+						</p>
+					) : null}
+				</div>
 				<p className='form-p'>Name: </p>
 				<input
 					type='text'

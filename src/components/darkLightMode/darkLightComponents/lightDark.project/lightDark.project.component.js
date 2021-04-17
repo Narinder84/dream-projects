@@ -25,12 +25,16 @@ const LightDarkProjectSection = ({ isLightMode, handleProject }) => {
 					<div className='image-container' id='image-container'>
 						<p>Crown-zip. An e-commerce project</p>
 						<img src={work} alt='Idea' id='work' />
-						<button
-							className='primary'
-							id='project-btn'
-							onClick={() => handleProject('https://crown-zip.herokuapp.com/')}>
-							See
-						</button>
+						<div className='btn-wr'>
+							<button
+								className='primary'
+								id='project-btn'
+								onClick={() =>
+									handleProject('https://crown-zip.herokuapp.com/')
+								}>
+								Live
+							</button>
+						</div>
 					</div>
 					<div className='description'>
 						<div
@@ -57,14 +61,16 @@ const LightDarkProjectSection = ({ isLightMode, handleProject }) => {
 					<div className='image-container' id='image-container'>
 						<p>Face Recognition app</p>
 						<img src={smartBrainApp} alt='Idea' id='work' />
-						<button
-							className='primary'
-							id='project-btn'
-							onClick={() =>
-								handleProject('https://go-smart-brain-live.herokuapp.com/')
-							}>
-							See
-						</button>
+						<div className='btn-wr'>
+							<button
+								className='primary'
+								id='project-btn'
+								onClick={() =>
+									handleProject('https://go-smart-brain-live.herokuapp.com/')
+								}>
+								Live
+							</button>
+						</div>
 					</div>
 					<div className='description'>
 						<div
@@ -92,9 +98,11 @@ const LightDarkProjectSection = ({ isLightMode, handleProject }) => {
 						<p>Other UI Projects in Java Script</p>
 						<img src={allProjects} alt='Idea' id='work' />
 						<a href='/projects' className='tag'>
-							<button className='primary' id='project-btn'>
-								See
-							</button>
+							<div className='btn-wr'>
+								<button className='primary' id='project-btn'>
+									Live
+								</button>
+							</div>
 						</a>
 					</div>
 					<div className='description'>

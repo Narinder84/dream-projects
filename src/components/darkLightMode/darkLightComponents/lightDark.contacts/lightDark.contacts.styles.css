@@ -1,5 +1,14 @@
 /** @format */
-
+#contact {
+	box-sizing: border-box;
+	flex-direction: column;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 70px;
+	min-width: 98.5vw;
+	height: 110vh;
+}
 .form-p {
 	font-weight: bold;
 }
@@ -38,11 +47,15 @@ img {
 	height: auto;
 	color: var(--primary-color);
 }
+.message-container {
+	display: flex;
+	justify-content: center;
+}
 #success {
 	color: #107fda;
 }
 #fault {
-	color: red;
+	color: rgb(201, 80, 80);
 }
 .send-container {
 	display: flex;
@@ -56,6 +69,8 @@ img {
 }
 
 #send {
+	border-radius: 5px;
+	width: 100px;
 	outline: none;
 	box-shadow: 1px 1px 1px rgb(151, 149, 149);
 	font-size: 1.2rem;
@@ -77,4 +92,24 @@ img {
 	margin-bottom: 10px;
 	font-size: 1.2rem;
 	color: var(--on-background);
+}
+input {
+	background-color: whitesmoke;
+	outline: none;
+	padding: 5px 10px;
+	width: 80%;
+	height: 30px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	border-radius: 7px;
+	font-size: 1rem;
+}
+textarea {
+	background-color: whitesmoke;
+	width: 80%;
+	height: 100px;
+	border-radius: 7px;
+	padding: 10px 10px;
+	font-size: 1.7rem;
+	margin-top: 5px;
 }

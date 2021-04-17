@@ -30,9 +30,11 @@ const LightDarkSkills = ({ isLightMode }) => {
 					</span>
 				</div>
 				<div className='lan'>
-					<p className='lan-section-first' id='first'>
-						Libraries:
-					</p>
+					<span>
+						<p className='lan-section-first' id='first'>
+							Libraries:
+						</p>
+					</span>
 					<span className='lan-section'>
 						<p>
 							React, React-Router, React-Redux, Redux-Thunk, Sagas, Material UI,
