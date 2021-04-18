@@ -83,7 +83,7 @@ h1 {
 	background-color: rgb(255 255 255/50%);
 }
 .in {
-	border-bottom: 2px white solid;
+	border-bottom: 2px solid var(--on-primary);
 }
 .heading {
 	font-weight: bolder;
