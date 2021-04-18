@@ -44,7 +44,6 @@ const LightDarkNave = ({ handleChange, isLightMode, sliderCheckedRef }) => {
 							<div className='slider round' />
 						</label>
 					</div>
-					;
 				</div>
 			</nav>
 		</>
