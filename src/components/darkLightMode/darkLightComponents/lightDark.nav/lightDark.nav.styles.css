@@ -135,9 +135,9 @@ nav a {
 		justify-content: space-between;
 		padding-top: 10px;
 	}
+
 	.right {
 		width: 100%;
-
 		display: flex;
 		justify-content: flex-end;
 	}

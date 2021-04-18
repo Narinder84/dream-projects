@@ -36,7 +36,7 @@ const LightDarkNave = ({ handleChange, isLightMode, sliderCheckedRef }) => {
 							{isLightMode ? (
 								<i className='fas fa-sun' />
 							) : (
-								<i className='fas fa-moon' />
+								<i className='fas fa-moon ' />
 							)}
 						</span>
 						<label className='theme-switch'>
