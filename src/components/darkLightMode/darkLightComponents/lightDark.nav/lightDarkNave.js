@@ -18,7 +18,7 @@ const LightDarkNave = ({ handleChange, isLightMode, sliderCheckedRef }) => {
 						ABOUT
 					</a>
 					<a className='na' href='#skills'>
-						SkILLS
+						SKILLS
 					</a>
 					<a className='na' href='#projects'>
 						PROJECTS
