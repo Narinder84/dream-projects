@@ -3,7 +3,7 @@
 	box-sizing: border-box;
 	flex-direction: column;
 	display: flex;
-	justify-content: center;
+
 	align-items: center;
 	margin-top: 70px;
 	min-width: 98.5vw;
@@ -17,9 +17,6 @@
 	color: var(--on-primary);
 }
 
-#contact {
-	height: 150vh;
-}
 h1 {
 	font-family: Caveat, sans-serif;
 	font-size: 90px;
