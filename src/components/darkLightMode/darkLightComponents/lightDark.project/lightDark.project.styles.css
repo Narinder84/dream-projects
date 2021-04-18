@@ -32,6 +32,9 @@ h1 {
 	height: 110vh;
 	padding: 20px;
 }
+.pro {
+	margin-bottom: 10px;
+}
 .project-all {
 	display: flex;
 	margin-bottom: 20px;
