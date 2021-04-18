@@ -50,9 +50,10 @@ const LightDarkProjectSection = ({ isLightMode, handleProject }) => {
 								with Readux-Thunk. State persistence is implemented in the web
 								app with local storage for batter user experience. Optimized app
 								using React-lazy and reselect library with Redux. Deployed on
-								heroku.<br></br> Live project :- https:/crown-zip.herokuapp.com{' '}
-								<br></br>{' '}
-								<span>Code :- https://github.com/Narinder84/masterCrown</span>
+								heroku.<br></br> <span className='in'>Live project :- </span>
+								<br /> https:/crown-zip.herokuapp.com <br></br>{' '}
+								<span className='in'>Code:-</span> <br />{' '}
+								https://github.com/Narinder84/masterCrown
 							</p>
 						</div>
 					</div>
@@ -85,9 +86,14 @@ const LightDarkProjectSection = ({ isLightMode, handleProject }) => {
 								security managed with hashing technique using bcrypt library.
 								Clarifia API used for face recognition.UI created with React.
 								Deployed on heroku.
-								<br></br> Live:- Smart Brain App
-								(go-smart-brain-live.herokuapp.com). <br></br> Back–End Code:-
-								https://github.com/Narinder84/server.<br></br> Front-End Code:-
+								<br></br> <span className='in'>Live:-</span>
+								<br />
+								https://go-smart-brain-live.herokuapp.com/ <br></br>{' '}
+								<span className='in'>Back–End Code:-</span>
+								<br />
+								https://github.com/Narinder84/server.
+								<br></br> <span className='in'>Front-End Code:-</span>
+								<br />
 								https://github.com/Narinder84/smart-brain.
 							</p>
 						</div>

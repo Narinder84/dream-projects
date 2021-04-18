@@ -16,6 +16,7 @@ nav {
 }
 .right {
 	margin-right: 15px;
+	padding-top: 10px;
 }
 .theme-switch-wrapper {
 	display: flex;

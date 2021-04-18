@@ -76,7 +76,9 @@ h1 {
 .dark-text-box {
 	background-color: rgb(255 255 255/50%);
 }
-
+.in {
+	border-bottom: 2px white solid;
+}
 .heading {
 	font-weight: bolder;
 	list-style: none;
