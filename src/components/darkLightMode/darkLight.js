@@ -74,9 +74,7 @@ class DarkAndLight extends React.Component {
 		console.log(this.state);
 		// sendMail();
 		if (name && email && subject && message) {
-			console.log(name, email, subject, message);
-
-			send(
+			return send(
 				'service_g34bwmw',
 				'template_i2iopti',
 				this.state.toSend,
