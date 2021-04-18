@@ -51,4 +51,8 @@ img {
 	#about {
 		height: 110vh;
 	}
+	#text-box {
+		padding: 10px;
+		width: 90vw;
+	}
 }

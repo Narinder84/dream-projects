@@ -20,7 +20,8 @@ const LightDarkSkills = ({ isLightMode }) => {
 			<div
 				className={`text-box text-box-len   ${
 					isLightMode === false ? ' dark-text-box' : null
-				}`}>
+				}`}
+				id='la'>
 				<div className='lan'>
 					<p className='lan-section-first' id='first'>
 						Languages:
