@@ -43,16 +43,16 @@ const LightDarkProjectSection = ({ isLightMode, handleProject }) => {
 								isLightMode === false ? ' dark-text-box' : null
 							}`}>
 							<p>
-								Crown Cloths – ecommerce app An online shopping app. Resalable
-								UI components are created with class and functional concepts of
-								React. All UIs are created using CSS3, CSS-Grid, and Flex-Box.
-								React-Router is implemented for smooth navigation. Managed state
-								and API calls with Readux-Thunk. State persistence is
-								implemented in the web app with local storage for batter user
-								experience. Optimized app using React-lazy and reselect library
-								with Redux. Deployed on heroku.<br></br> Live project :-
-								https:/crown-zip.herokuapp.com <br></br> Can see code :-
-								https://github.com/Narinder84/masterCrown
+								Crown Cloths –An online shopping app. Resalable UI components
+								are created with class and functional concepts of React. All UIs
+								are created using CSS3, CSS-Grid, and Flex-Box. React-Router is
+								implemented for smooth navigation. Managed state and API calls
+								with Readux-Thunk. State persistence is implemented in the web
+								app with local storage for batter user experience. Optimized app
+								using React-lazy and reselect library with Redux. Deployed on
+								heroku.<br></br> Live project :- https:/crown-zip.herokuapp.com{' '}
+								<br></br>{' '}
+								<span>Code :- https://github.com/Narinder84/masterCrown</span>
 							</p>
 						</div>
 					</div>
@@ -85,9 +85,9 @@ const LightDarkProjectSection = ({ isLightMode, handleProject }) => {
 								security managed with hashing technique using bcrypt library.
 								Clarifia API used for face recognition.UI created with React.
 								Deployed on heroku.
-								<br></br> Live project: - Smart Brain App
-								(go-smart-brain-live.herokuapp.com). <br></br> Back –End Code: -
-								https://github.com/Narinder84/server.<br></br> Front -End Code:-
+								<br></br> Live:- Smart Brain App
+								(go-smart-brain-live.herokuapp.com). <br></br> Back–End Code:-
+								https://github.com/Narinder84/server.<br></br> Front-End Code:-
 								https://github.com/Narinder84/smart-brain.
 							</p>
 						</div>
