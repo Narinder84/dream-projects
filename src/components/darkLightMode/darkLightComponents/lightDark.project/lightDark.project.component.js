@@ -53,7 +53,7 @@ const LightDarkProjectSection = ({ isLightMode, handleProject }) => {
 								heroku.<br></br> <span className='in'>Live project :- </span>
 								<br /> https:/crown-zip.herokuapp.com <br></br>{' '}
 								<span className='in'>Code:-</span> <br />{' '}
-								https://github.com/Narinder84/masterCrown
+								<p>https://github.com/Narinder84/masterCrown</p>
 							</p>
 						</div>
 					</div>
@@ -101,7 +101,7 @@ const LightDarkProjectSection = ({ isLightMode, handleProject }) => {
 				</div>
 				<div className='project-all'>
 					<div className='image-container' id='image-container'>
-						<p>Other UI Projects in Java Script</p>
+						<p>Other UI Projects </p>
 						<img src={allProjects} alt='Idea' id='work' />
 						<div className='btn-wr'>
 							<a href='/projects' className='tag'>
@@ -119,9 +119,9 @@ const LightDarkProjectSection = ({ isLightMode, handleProject }) => {
 								isLightMode === false ? ' dark-text-box' : null
 							}`}>
 							<p>
-								UIs created with vanilla javaScript.All compnets are create by
-								using HTML5, CSS3, CSS-Grid. No third party libraries usied.
-								These projects are create using AIPs.
+								UIs created with React.All components are create by using HTML5,
+								CSS3, CSS-Grid. No third party libraries used. These projects
+								are create using AIPs.
 								<br></br>
 								<li className='heading'>Project Names :</li>
 								<li>Picture in Picture</li>
