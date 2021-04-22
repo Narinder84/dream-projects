@@ -51,14 +51,8 @@ class LightDarkConstactSection extends React.Component {
 		this.setState({ ismailsent: false });
 	};
 	render() {
-		console.log(this.state.toSend);
-		const {
-			ismailsent,
-
-			toSend,
-
-			isLightMode,
-		} = this.state;
+		const isLightMode = this.props.isLightMode;
+		console.log('====> ', isLightMode, isLightMode ? 'Day' : 'contactNight');
 		return (
 			<section id='contact'>
 				<h1>Contact</h1>
@@ -69,13 +63,13 @@ class LightDarkConstactSection extends React.Component {
 				/>
 				<div className='image-container' id='contact-form'>
 					<div className='message-container'>
-						{ismailsent === '' ? (
+						{this.state.ismailsent === '' ? (
 							<p id='hd'>Send Message</p>
-						) : ismailsent === true ? (
+						) : this.state.ismailsent === true ? (
 							<p className='hd' id='success'>
 								Message has been sent. Thanks for showing intrest.
 							</p>
-						) : ismailsent === false ? (
+						) : this.state.ismailsent === false ? (
 							<p className='hd' id='fault'>
 								Somethig missing.
 							</p>
@@ -86,28 +80,28 @@ class LightDarkConstactSection extends React.Component {
 						type='text'
 						name='name'
 						onChange={this.handleInputChange}
-						value={toSend.name}
+						value={this.state.toSend.name}
 					/>
 					<p className='form-p'>Email:</p>
 					<input
 						type='email'
 						name='email'
 						onChange={this.handleInputChange}
-						value={toSend.email}
+						value={this.state.toSend.email}
 					/>
 					<p className='form-p'>Subject:</p>
 					<input
 						type='text'
 						name='subject'
 						onChange={this.handleInputChange}
-						value={toSend.subject}
+						value={this.state.toSend.subject}
 					/>
 					<p className='form-p'>Your Message:</p>
 
 					<textarea
 						id='w3review'
 						name='message'
-						value={toSend.message}
+						value={this.state.toSend.message}
 						rows='4'
 						cols='50'
 						onChange={this.handleInputChange}></textarea>

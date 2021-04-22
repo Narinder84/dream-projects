@@ -1,6 +1,6 @@
 /** @format */
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import './darkLight.style.css';
 import LightDarkNave from '../../components/darkLightMode/darkLightComponents/lightDark.nav/lightDarkNave';
@@ -10,28 +10,47 @@ import LightDarkSkillsSection from '../../components/darkLightMode/darkLightComp
 import LightDarkProjectSection from '../../components/darkLightMode/darkLightComponents/lightDark.project/lightDark.project.component';
 import LightDarkConstactSection from '../../components/darkLightMode/darkLightComponents/lightDark.contacts/lightDark.contacts.component';
 
-class DarkAndLight extends React.Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			toggleText: 'Light Mode',
-			isLightMode: true,
-			val: '',
-		};
-		this.sliderChecked = React.createRef();
-	}
-	componentDidMount() {
+const DarkAndLight = () => {
+	// constructor(props) {
+	// 	super(props);
+	// 	state = {
+	// 		toggleText: 'Light Mode',
+	// 		isLightMode: true,
+	// 		val: '',
+	// 	};
+	// 	this.sliderChecked = React.createRef();
+	// }
+	const sliderChecked = React.createRef();
+	const [state, setState] = useState({
+		toggleText: 'Light Mode',
+		isLightMode: true,
+		val: '',
+	});
+
+	// componentDidMount() {
+	// 	const status = sessionStorage.getItem('isLightMode');
+
+	// 	if (status === 'false') {
+	// 		this.sliderChecked.current.checked = true;
+	// 		this.handleSwitch(false);
+	// 		this.setState({ ...this.state, isLightMode: false });
+	// 	} else {
+	// 		this.handleSwitch(true);
+	// 	}
+	// }
+	useEffect(() => {
+		console.log('componet did mount');
 		const status = sessionStorage.getItem('isLightMode');
 
 		if (status === 'false') {
-			this.sliderChecked.current.checked = true;
-			this.handleSwitch(false);
-			this.setState({ ...this.state, isLightMode: false });
+			sliderChecked.current.checked = true;
+			handleSwitch(false);
+			setState({ ...state, isLightMode: false });
 		} else {
-			this.handleSwitch(true);
+			handleSwitch(true);
 		}
-	}
-	handleSwitch = (checkStatus) => {
+	}, []);
+	const handleSwitch = (checkStatus) => {
 		if (checkStatus === false) {
 			document.documentElement.setAttribute('data-theme', 'dark');
 
@@ -43,42 +62,43 @@ class DarkAndLight extends React.Component {
 			sessionStorage.setItem('isLightMode', true);
 		}
 	};
-	handleChange = (e) => {
-		this.setState(
+	const handleChange = (e) => {
+		setState(
 			{
-				...this.state,
-				isLightMode: !this.state.isLightMode,
-				val: this.sliderChecked.current.checked,
+				...state,
+				isLightMode: !state.isLightMode,
+				val: sliderChecked.current.checked,
 			},
 			() => {
-				this.handleSwitch(this.state.isLightMode);
+				handleSwitch(state.isLightMode);
 			},
 		);
 	};
+	useEffect(() => {
+		handleSwitch(state.isLightMode);
+	}, [state.isLightMode]);
 
-	handleProject = (val) => {
-		const url = val;
+	const handleProject = (url) => {
 		window.open(url);
 	};
-	render() {
-		return (
-			<>
-				<LightDarkNave
-					isLightMode={this.state.isLightMode}
-					sliderCheckedRef={this.sliderChecked}
-					handleChange={this.handleChange}
-				/>
-				<LightDarkHomeSection isLightMode={this.state.ismailsent} />
-				<LightDarkAboutSection isLightMode={this.state.isLightMode} />
-				<LightDarkSkillsSection isLightMode={this.state.isLightMode} />
-				<LightDarkProjectSection
-					isLightMode={this.state.isLightMode}
-					handleProject={this.handleProject}
-				/>
-				<LightDarkConstactSection isLightMode={this.state.isLightMode} />
-			</>
-		);
-	}
-}
+	console.log(state.isLightMode);
+	return (
+		<>
+			<LightDarkNave
+				isLightMode={state.isLightMode}
+				sliderCheckedRef={sliderChecked}
+				handleChange={handleChange}
+			/>
+			<LightDarkHomeSection isLightMode={state.isLightMode} />
+			<LightDarkAboutSection isLightMode={state.isLightMode} />
+			<LightDarkSkillsSection isLightMode={state.isLightMode} />
+			<LightDarkProjectSection
+				isLightMode={state.isLightMode}
+				handleProject={handleProject}
+			/>
+			<LightDarkConstactSection isLightMode={state.isLightMode} />
+		</>
+	);
+};
 
 export default DarkAndLight;
