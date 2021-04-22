@@ -1,7 +1,6 @@
 /** @format */
 
 import React from 'react';
-import { send } from 'emailjs-com';
 
 import './darkLight.style.css';
 import LightDarkNave from '../../components/darkLightMode/darkLightComponents/lightDark.nav/lightDarkNave';
@@ -16,16 +15,8 @@ class DarkAndLight extends React.Component {
 		super(props);
 		this.state = {
 			toggleText: 'Light Mode',
-			isLightMode: true,
+			isLightMode: false,
 			val: '',
-
-			ismailsent: '',
-			toSend: {
-				name: '',
-				email: '',
-				subject: '',
-				message: '',
-			},
 		};
 		this.sliderChecked = React.createRef();
 	}
@@ -64,35 +55,7 @@ class DarkAndLight extends React.Component {
 			},
 		);
 	};
-	handleInputChange = (e) => {
-		const { name, value } = e.target;
-		const newToSend = { ...this.state.toSend, [name]: value };
-		this.setState({ ...this.state, toSend: newToSend });
-	};
-	handleSubmit = async () => {
-		const { name, email, subject, message } = this.state.toSend;
-		console.log(this.state);
-		// sendMail();
-		if (name && email && subject && message) {
-			return send(
-				'service_g34bwmw',
-				'template_i2iopti',
-				this.state.toSend,
 
-				'user_nOccccZao1z8VOViku901',
-			)
-				.then((response) => {
-					// console.log('SUCCESS!', response.status, response.text);
-					const values = { name: '', email: '', subject: '', message: '' };
-					this.setState({ ...this.state, ismailsent: true, toSend: values });
-				})
-				.catch((err) => {
-					// console.log('FAILED...', err);
-					this.setState({ ismailsent: false });
-				});
-		}
-		this.setState({ ismailsent: false });
-	};
 	handleProject = (val) => {
 		const url = val;
 		window.open(url);
@@ -112,13 +75,7 @@ class DarkAndLight extends React.Component {
 					isLightMode={this.state.isLightMode}
 					handleProject={this.handleProject}
 				/>
-				<LightDarkConstactSection
-					ismailsent={this.state.ismailsent}
-					handleInputChange={this.handleInputChange}
-					toSend={this.state.toSend}
-					handleSubmit={this.handleSubmit}
-					isLightMode={this.state.isLightMode}
-				/>
+				<LightDarkConstactSection isLightMode={this.state.isLightMode} />
 			</>
 		);
 	}
