@@ -15,7 +15,7 @@ class DarkAndLight extends React.Component {
 		super(props);
 		this.state = {
 			toggleText: 'Light Mode',
-			isLightMode: false,
+			isLightMode: true,
 			val: '',
 		};
 		this.sliderChecked = React.createRef();
