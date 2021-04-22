@@ -1,8 +1,9 @@
 /** @format */
 
 import React from 'react';
-import contactDay from '../../img/undraw_contact_us_day.svg';
-import contactNight from '../../img/undraw_contact_us_night.svg';
+
+import contactDay from '../../../../img/undraw_contact_us_day.svg';
+import contactNight from '../../../../img/undraw_contact_us_night.svg';
 
 import './lightDark.contacts.styles.css';
 

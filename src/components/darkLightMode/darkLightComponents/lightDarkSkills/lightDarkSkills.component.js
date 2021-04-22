@@ -3,8 +3,8 @@
 import React from 'react';
 
 import './lightDarkSkills.styles.css';
-import programmimgDay from '../../img/undraw_programming_forDay.svg';
-import programmimgNight from '../../img/undraw_programming_forNight.svg';
+import programmimgDay from '../../../../img/undraw_programming_forDay.svg';
+import programmimgNight from '../../../../img/undraw_programming_forNight.svg';
 
 const LightDarkSkills = ({ isLightMode }) => {
 	return (

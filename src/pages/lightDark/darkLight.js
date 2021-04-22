@@ -4,12 +4,12 @@ import React from 'react';
 import { send } from 'emailjs-com';
 
 import './darkLight.style.css';
-import LightDarkNave from './darkLightComponents/lightDark.nav/lightDarkNave';
-import LightDarkHomeSection from './darkLightComponents/lightDark.home/lightDark.home.component';
-import LightDarkAboutSection from './darkLightComponents/lightDark.about/lightDark.about';
-import LightDarkSkillsSection from './darkLightComponents/lightDarkSkills/lightDarkSkills.component';
-import LightDarkProjectSection from './darkLightComponents/lightDark.project/lightDark.project.component';
-import LightDarkConstactSection from './darkLightComponents/lightDark.contacts/lightDark.contacts.component';
+import LightDarkNave from '../../components/darkLightMode/darkLightComponents/lightDark.nav/lightDarkNave';
+import LightDarkHomeSection from '../../components/darkLightMode/darkLightComponents/lightDark.home/lightDark.home.component';
+import LightDarkAboutSection from '../../components/darkLightMode/darkLightComponents/lightDark.about/lightDark.about';
+import LightDarkSkillsSection from '../../components/darkLightMode/darkLightComponents/lightDarkSkills/lightDarkSkills.component';
+import LightDarkProjectSection from '../../components/darkLightMode/darkLightComponents/lightDark.project/lightDark.project.component';
+import LightDarkConstactSection from '../../components/darkLightMode/darkLightComponents/lightDark.contacts/lightDark.contacts.component';
 
 class DarkAndLight extends React.Component {
 	constructor(props) {

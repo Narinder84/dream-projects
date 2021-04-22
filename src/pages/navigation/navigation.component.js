@@ -2,10 +2,10 @@
 import React from 'react';
 import './navigation.style.css';
 
-import infi from '../darkLightMode/img/infinite scroller.png';
-import picture from '../darkLightMode/img/Picture in picture.png';
-import jokeTeller from '../darkLightMode/img/jockteller.png';
-import quote from '../darkLightMode/img/qoute.png';
+import infi from '../../img/infinite scroller.png';
+import picture from '../../img/Picture in picture.png';
+import jokeTeller from '../../img/jockteller.png';
+import quote from '../../img/qoute.png';
 class NavigationBar extends React.Component {
 	componentDidMount() {
 		const status = sessionStorage.getItem('isLightMode');
@@ -72,12 +72,6 @@ class NavigationBar extends React.Component {
 							</button>
 						</a>
 					</div>
-
-					{/* <a href='infiniteScroll'>Infinite Scroll</a>
-				<a href='picture'>Picture in Picture</a>
-				<a href='jokeTeller'>JokeTeller</a>
-				<a href='/'>Back</a>
-				<a href='quote'>Quote Generator</a> */}
 				</div>
 			</div>
 		);

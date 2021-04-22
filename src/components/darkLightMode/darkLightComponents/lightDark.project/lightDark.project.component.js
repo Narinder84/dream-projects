@@ -3,11 +3,12 @@
 import React from 'react';
 
 import './lightDark.project.styles.css';
-import projectsDay from '../../img/undraw_Project_completed_day.svg';
-import projectsNight from '../../img/undraw_Project_completed_night.svg';
-import work from '../../img/Crown-zip.png';
-import smartBrainApp from '../../img/smart brain.png';
-import allProjects from '../../img/Allprojrcts.png';
+import projectsDay from '../../../../img/undraw_Project_completed_day.svg';
+
+import projectsNight from '../../../../img/undraw_Project_completed_night.svg';
+import work from '../../../../img/Crown-zip.png';
+import smartBrainApp from '../../../../img/smart brain.png';
+import allProjects from '../../../../img/Allprojrcts.png';
 
 const LightDarkProjectSection = ({ isLightMode, handleProject }) => {
 	return (

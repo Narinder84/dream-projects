@@ -1,11 +1,11 @@
 /** @format */
 import { Route, Switch } from 'react-router-dom';
-import OtherProjects from './components/navigation/navigation.component';
-import QuoteGenerator from './components/quoteGenerator/quoteGenerator.component';
-import InfiScroll from './components/infiScroll/infi.scroll';
-import Picture from './components/pictureInPicture/pictureInPicture';
-import JockTeller from './components/jockTeller/jockTeller';
-import DarkAndLight from './components/darkLightMode/darkLight';
+import OtherProjects from './pages/navigation/navigation.component';
+import QuoteGenerator from './pages/quoteGenerator/quoteGenerator.component';
+import InfiScroll from './pages/infiScroll/infi.scroll';
+import Picture from './pages/pictureInPicture/pictureInPicture';
+import JockTeller from './pages/jockTeller/jockTeller';
+import DarkAndLight from './pages/lightDark/darkLight';
 
 import './App.css';
 

@@ -3,8 +3,8 @@
 import React from 'react';
 import './light.dark.home.styles.css';
 
-import reactLogoLight from '../../img/undraw_react_light.svg';
-import reactLogDark from '../../img/undraw_react_y7wq.svg';
+import reactLogoLight from '../../../../img/undraw_react_light.svg';
+import reactLogDark from '../../../../img/undraw_react_y7wq.svg';
 
 const HomeSection = ({ isLightMode }) => {
 	return (
