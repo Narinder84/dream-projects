@@ -1,6 +1,6 @@
 /** @format */
 
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { send } from 'emailjs-com';
 
 import contactDay from '../../../../img/undraw_contact_us_day.svg';
@@ -39,7 +39,7 @@ const LightDarkConstactSection = (props) => {
 	};
 	const handleSubmit = async () => {
 		const { name, email, subject, message } = state.toSend;
-		console.log(state);
+
 		// sendMail();
 		if (name && email && subject && message) {
 			return send(
@@ -56,14 +56,14 @@ const LightDarkConstactSection = (props) => {
 				})
 				.catch((err) => {
 					// console.log('FAILED...', err);
-					setState({ ismailsent: false });
+					setState({ ...state, ismailsent: false });
 				});
 		}
-		setState({ ismailsent: false });
+		setState({ ...state, ismailsent: false });
 	};
 
 	const isLightMode = props.isLightMode;
-	console.log('====> ', isLightMode, isLightMode ? 'Day' : 'contactNight');
+
 	return (
 		<section id='contact'>
 			<h1>Contact</h1>

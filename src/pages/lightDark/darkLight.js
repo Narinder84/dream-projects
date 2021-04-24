@@ -39,7 +39,6 @@ const DarkAndLight = () => {
 	// 	}
 	// }
 	useEffect(() => {
-		console.log('componet did mount');
 		const status = sessionStorage.getItem('isLightMode');
 
 		if (status === 'false') {
@@ -63,16 +62,11 @@ const DarkAndLight = () => {
 		}
 	};
 	const handleChange = (e) => {
-		setState(
-			{
-				...state,
-				isLightMode: !state.isLightMode,
-				val: sliderChecked.current.checked,
-			},
-			() => {
-				handleSwitch(state.isLightMode);
-			},
-		);
+		setState({
+			...state,
+			isLightMode: !state.isLightMode,
+			val: sliderChecked.current.checked,
+		});
 	};
 	useEffect(() => {
 		handleSwitch(state.isLightMode);
@@ -81,7 +75,7 @@ const DarkAndLight = () => {
 	const handleProject = (url) => {
 		window.open(url);
 	};
-	console.log(state.isLightMode);
+
 	return (
 		<>
 			<LightDarkNave
