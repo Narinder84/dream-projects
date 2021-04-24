@@ -11,7 +11,6 @@ import smartBrainApp from '../../../../img/smart brain.png';
 import allProjects from '../../../../img/Allprojrcts.png';
 
 const LightDarkProjectSection = ({ isLightMode, handleProject }) => {
-	console.log('====Project=====');
 	return (
 		<section id='projects'>
 			<h1>Projects</h1>

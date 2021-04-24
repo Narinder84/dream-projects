@@ -62,7 +62,6 @@ const DarkAndLight = () => {
 		}
 	};
 	const handleChange = (e) => {
-		console.log('===creates==');
 		setState({
 			...state,
 			isLightMode: !state.isLightMode,

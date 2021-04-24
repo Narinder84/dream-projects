@@ -7,7 +7,6 @@ import reactLogoLight from '../../../../img/undraw_react_light.svg';
 import reactLogDark from '../../../../img/undraw_react_y7wq.svg';
 
 const HomeSection = (props, { isLightMode }) => {
-	console.log('====home section =====');
 	return (
 		<>
 			<section id='home'>

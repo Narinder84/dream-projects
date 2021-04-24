@@ -42,7 +42,7 @@ class JockTeller extends React.Component {
 	};
 	handelClick = async () => {
 		const joke = await getJock();
-		console.log(joke);
+
 		this.setState(
 			() => ({ joke: joke }),
 			() => {

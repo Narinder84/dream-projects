@@ -12,6 +12,6 @@ export const getQuotes = async () => {
 
 export const getQuote = (data) => {
 	const quote = data[Math.floor(Math.random() * data.length)];
-	console.log(quote);
+
 	return quote;
 };

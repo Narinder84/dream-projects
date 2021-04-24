@@ -8,7 +8,6 @@ import aboutDay from '../../../../img/undraw_about_me_day.svg';
 import aboutNight from '../../../../img/undraw_about_me_night.svg';
 
 const LightDarkAbout = ({ isLightMode }) => {
-	console.log('====about=====');
 	return (
 		<section id='about'>
 			<div className='about-container'>

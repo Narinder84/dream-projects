@@ -21,7 +21,6 @@ class QuoteGenerator extends React.Component {
 		this.setState({ ...this.state, quotes: quotes });
 	}
 	render() {
-		console.log(this.state.quotes);
 		const quote = getQuote(this.state.quotes);
 
 		return (

@@ -63,7 +63,6 @@ const LightDarkConstactSection = (props) => {
 	};
 
 	const isLightMode = props.isLightMode;
-	console.log('====contact=====');
 	return (
 		<section id='contact'>
 			<h1>Contact</h1>
