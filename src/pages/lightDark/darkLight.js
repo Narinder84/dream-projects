@@ -1,6 +1,6 @@
 /** @format */
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 
 import './darkLight.style.css';
 import LightDarkNave from '../../components/darkLightMode/darkLightComponents/lightDark.nav/lightDarkNave';
@@ -62,6 +62,7 @@ const DarkAndLight = () => {
 		}
 	};
 	const handleChange = (e) => {
+		console.log('===creates==');
 		setState({
 			...state,
 			isLightMode: !state.isLightMode,
@@ -72,9 +73,9 @@ const DarkAndLight = () => {
 		handleSwitch(state.isLightMode);
 	}, [state.isLightMode]);
 
-	const handleProject = (url) => {
+	const handleProject = useCallback((url) => {
 		window.open(url);
-	};
+	}, []);
 
 	return (
 		<>
@@ -95,4 +96,4 @@ const DarkAndLight = () => {
 	);
 };
 
-export default DarkAndLight;
+export default React.memo(DarkAndLight);

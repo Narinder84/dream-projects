@@ -5,6 +5,7 @@ import React from 'react';
 import './lightDark.nav.styles.css';
 
 const LightDarkNave = ({ handleChange, isLightMode, sliderCheckedRef }) => {
+	console.log('===Nave====');
 	return (
 		<>
 			<nav
@@ -50,4 +51,4 @@ const LightDarkNave = ({ handleChange, isLightMode, sliderCheckedRef }) => {
 	);
 };
 
-export default LightDarkNave;
+export default React.memo(LightDarkNave);

@@ -11,6 +11,7 @@ import smartBrainApp from '../../../../img/smart brain.png';
 import allProjects from '../../../../img/Allprojrcts.png';
 
 const LightDarkProjectSection = ({ isLightMode, handleProject }) => {
+	console.log('====Project=====');
 	return (
 		<section id='projects'>
 			<h1>Projects</h1>
@@ -124,7 +125,7 @@ const LightDarkProjectSection = ({ isLightMode, handleProject }) => {
 								CSS3, CSS-Grid. No third party libraries used. These projects
 								are create using AIPs.
 								<br></br>
-								<li className='heading'>Project Names :</li>
+								<li className='heading'>Project Names</li>
 								<li>Picture in Picture</li>
 								<li>Jock Teller</li>
 								<li>Quotes</li>
@@ -138,4 +139,4 @@ const LightDarkProjectSection = ({ isLightMode, handleProject }) => {
 	);
 };
 
-export default LightDarkProjectSection;
+export default React.memo(LightDarkProjectSection);

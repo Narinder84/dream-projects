@@ -7,6 +7,7 @@ import programmimgDay from '../../../../img/undraw_programming_forDay.svg';
 import programmimgNight from '../../../../img/undraw_programming_forNight.svg';
 
 const LightDarkSkills = ({ isLightMode }) => {
+	console.log('====skills=====');
 	return (
 		<section id='skills'>
 			<h1>Skills</h1>
@@ -67,4 +68,4 @@ const LightDarkSkills = ({ isLightMode }) => {
 	);
 };
 
-export default LightDarkSkills;
+export default React.memo(LightDarkSkills);
