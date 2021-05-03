@@ -121,24 +121,23 @@ input:checked + .slider::before {
 }
 
 @media screen and (max-width: 812px) {
-	nav {
-		width: 100%;
+	#nav {
+		// width: 100%;
 		/* right: 10px; */
 		flex-direction: column-reverse;
 		letter-spacing: normal;
 		padding-left: 0px;
 	}
-	.na {
-		font-weight: bolder;
-		font-size: 1rem;
 
-		margin-right: 20px;
-	}
 	.left {
-		margin-left: 20px;
+		margin-left: 1rem;
 		display: inline-flex;
 		justify-content: space-between;
 		padding-top: 10px;
+		.na {
+			font-size: 2rem;
+			font-weight: bolder;
+		}
 	}
 
 	.right {
