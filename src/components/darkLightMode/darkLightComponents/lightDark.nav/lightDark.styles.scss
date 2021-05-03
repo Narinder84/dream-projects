@@ -1,0 +1,153 @@
+/** @format */
+
+#nav {
+	padding-top: 2rem;
+	padding-left: 2rem;
+	min-width: 98vw;
+	display: flex;
+	justify-content: space-between;
+	top: 0;
+	font-family: Oswald, sans-serif;
+	z-index: 10;
+	position: fixed;
+	font-size: 2rem;
+	letter-spacing: 0.3rem;
+}
+.left {
+	margin-left: 2rem;
+	display: inline-flex;
+	justify-content: space-between;
+	padding-top: 1rem;
+	.na {
+		font-weight: bold;
+		font-size: x-large;
+		color: var(--primary-color);
+		margin-right: 2rem;
+		&:hover,
+		&:focus {
+			color: var(--on-background);
+			border-bottom: 0.3rem solid;
+		}
+	}
+}
+.right {
+	margin-right: 1.5rem;
+	padding-top: 1rem;
+}
+
+.theme-switch-wrapper {
+	display: flex;
+	align-items: center;
+	width: 21rem;
+	justify-content: space-between;
+	.toggle-text {
+		/* position: relative;
+	top: -3px;
+	right: 10px; */
+		margin-right: 1rem;
+		color: var(--on-background);
+	}
+	.theme-switch {
+		margin-top: 0.5rem;
+		display: inline-block;
+		height: 3.4rem;
+		position: relative;
+		width: 6.5rem;
+
+		input {
+			display: none;
+		}
+	}
+	.slider {
+		border-radius: 3.4rem;
+		background: rgb(233, 103, 103);
+		bottom: 0;
+		cursor: pointer;
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+		transition: 0.4s;
+		margin-left: 0.5rem;
+	}
+	.round {
+		border-radius: 3.4rem;
+	}
+}
+
+.slider.round {
+	border-radius: 3.4rem;
+}
+.slider.round::before {
+	border-radius: 50%;
+}
+
+.slider::before {
+	background: #fff;
+	bottom: 0.4rem;
+	content: '';
+	height: 2.6rem;
+	left: 0.4rem;
+	position: absolute;
+	transition: 0.4s;
+	width: 2.6rem;
+}
+
+input:checked + .slider {
+	background: var(--primary-color);
+}
+input:checked + .slider::before {
+	transform: translateX(2.6rem);
+}
+
+#nav a {
+	text-decoration: none;
+}
+.nav-dark {
+	background-color: rgb(0, 0, 0);
+}
+.na {
+	font-weight: bold;
+	font-size: x-large;
+	color: var(--primary-color);
+	margin-right: 2rem;
+}
+.na:hover,
+.na:focus {
+	color: var(--on-background);
+	border-bottom: 0.3rem solid;
+}
+
+@media screen and (max-width: 812px) {
+	nav {
+		width: 100%;
+		/* right: 10px; */
+		flex-direction: column-reverse;
+		letter-spacing: normal;
+		padding-left: 0px;
+	}
+	.na {
+		font-weight: bolder;
+		font-size: 1rem;
+
+		margin-right: 20px;
+	}
+	.left {
+		margin-left: 20px;
+		display: inline-flex;
+		justify-content: space-between;
+		padding-top: 10px;
+	}
+
+	.right {
+		width: 100%;
+		display: flex;
+		justify-content: flex-end;
+	}
+	.theme-switch-wrapper {
+		width: 250px;
+	}
+	.toggle-text {
+		margin-right: 20px;
+	}
+}

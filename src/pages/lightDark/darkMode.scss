@@ -1,0 +1,13 @@
+
+
+
+
+[data-theme='dark'] {
+	--primary-color: #{$dark-primary-color};
+	--primary-variant: #{$dark-primary-variant};
+	--secondary-color: #{$dark-secondary-color};
+	--on-primary: #{$dark-on-primary};
+	--on-background: #{$dark-on-background};
+	--on-background-alt: {$on-background-alt};
+	--background: #{$dark-background};
+}

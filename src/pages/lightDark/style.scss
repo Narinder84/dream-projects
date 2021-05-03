@@ -1,0 +1,19 @@
+/** @format */
+/** @format */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Kumbh+Sans:wght@300&family=Oswald:wght@200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+@import './lightDark-variables.scss';
+@import './lightMode.scss';
+
+[data-theme='dark'] {
+	--primary-color: #{$dark-primary-color};
+	--primary-variant: #{$dark-primary-variant};
+	--secondary-color: #{$dark-secondary-color};
+	--on-primary: #{$dark-on-primary};
+	--on-background: #{$dark-on-background};
+	--on-background-alt: #{$dark-on-background-alt};
+	--background: #{$dark-background};
+}
+@import './main.scss';

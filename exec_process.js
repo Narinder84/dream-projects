@@ -12,7 +12,6 @@ var result = function (command, cb) {
 			return cb(null, stdout);
 		}
 	});
-	console.log(child);
 };
 
 exports.result = result;

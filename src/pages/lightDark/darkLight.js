@@ -2,7 +2,8 @@
 
 import React, { useEffect, useState, useCallback } from 'react';
 
-import './darkLight.style.css';
+// import './darkLight.style.css';
+import './style.scss';
 import LightDarkNave from '../../components/darkLightMode/darkLightComponents/lightDark.nav/lightDarkNave';
 import LightDarkHomeSection from '../../components/darkLightMode/darkLightComponents/lightDark.home/lightDark.home.component';
 import LightDarkAboutSection from '../../components/darkLightMode/darkLightComponents/lightDark.about/lightDark.about';
