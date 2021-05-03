@@ -1,9 +1,10 @@
 /** @format */
 
 #nav {
+	background-color: var(--background);
 	padding-top: 2rem;
 	padding-left: 2rem;
-	min-width: 98vw;
+	min-width: 100vw;
 	display: flex;
 	justify-content: space-between;
 	top: 0;
@@ -33,6 +34,7 @@
 .right {
 	margin-right: 1.5rem;
 	padding-top: 1rem;
+	padding-right: 3rem;
 }
 
 .theme-switch-wrapper {
