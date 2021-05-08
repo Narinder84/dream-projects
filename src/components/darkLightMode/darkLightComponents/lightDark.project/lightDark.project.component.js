@@ -9,7 +9,6 @@ import projectsNight from '../../../../img/undraw_Project_completed_night.svg';
 import work from '../../../../img/Crown-zip.png';
 import smartBrainApp from '../../../../img/smart brain.png';
 import allProjects from '../../../../img/Allprojrcts.png';
-import MyCard from '../../card/card';
 
 const LightDarkProjectSection = ({ isLightMode, handleProject }) => {
 	return (
