@@ -1,0 +1,127 @@
+/** @format */
+#contact {
+	padding-top: 15rem;
+	box-sizing: border-box;
+	flex-direction: column;
+	display: flex;
+
+	align-items: center;
+	margin-top: 70px;
+	min-width: 98.5vw;
+	height: 100vh;
+
+	h1 {
+		font-family: Caveat, sans-serif;
+		font-size: 90px;
+		margin-bottom: 0;
+		text-decoration: underline;
+	}
+	img {
+		height: 100px;
+		width: 200px;
+		margin-bottom: 2rem;
+	}
+}
+.form-p {
+	font-weight: bold;
+}
+
+#hd {
+	color: var(--on-primary);
+}
+
+.image-container {
+	border: 1px solid var(--secondary-color);
+	border-radius: 10px;
+	padding: 10px 20px;
+	margin-right: 25px;
+	width: auto;
+	height: 29vh;
+	background: var(--background);
+	box-shadow: var(--box-shadow);
+}
+
+#contact-form {
+	margin-top: 0;
+	width: 100vh;
+	height: auto;
+	color: var(--primary-color);
+}
+.message-container {
+	display: flex;
+	justify-content: center;
+}
+#success {
+	color: #107fda;
+}
+#fault {
+	color: rgb(201, 80, 80);
+}
+.send-container {
+	display: flex;
+	width: 100%;
+	justify-content: flex-end;
+}
+
+.primary {
+	background: var(--primary-color);
+	color: var(--on-primary);
+}
+
+#send {
+	color: var(--on-primary);
+	border-radius: 5px;
+	width: 100px;
+	outline: none;
+	box-shadow: 1px 1px 1px rgb(151, 149, 149);
+	font-size: 2.2rem;
+}
+#send:active {
+	box-shadow: inset 0px 0px 0px rgb(248, 173, 173);
+}
+#hd {
+	padding-top: 10px;
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: var(--on-background);
+	margin-bottom: 10px;
+}
+
+.hd {
+	padding-top: 10px;
+	margin-bottom: 10px;
+	font-size: 1.2rem;
+	color: var(--on-background);
+}
+input {
+	background-color: whitesmoke;
+	outline: none;
+	padding: 5px 10px;
+	width: 80%;
+	height: 30px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	border-radius: 7px;
+	font-size: 1rem;
+}
+textarea {
+	background-color: whitesmoke;
+	width: 80%;
+	height: 100px;
+	border-radius: 7px;
+	padding: 10px 10px;
+	font-size: 1.1rem;
+	margin-top: 5px;
+}
+@media screen and (max-width: 812px) {
+	#contact-form {
+		width: 35vh;
+	}
+}
+.primary-bt {
+	background-color: var(--primary-color);
+	height: 4rem;
+	button {
+		font-size: 2.2rem;
+	}
+}

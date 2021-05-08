@@ -6,22 +6,9 @@ import { send } from 'emailjs-com';
 import contactDay from '../../../../img/undraw_contact_us_day.svg';
 import contactNight from '../../../../img/undraw_contact_us_night.svg';
 
-import './lightDark.contacts.styles.css';
+import './contact.styles.scss';
 
 const LightDarkConstactSection = (props) => {
-	// constructor(props) {
-	// 	super(props);
-	// 	this.state = {
-	// 		ismailsent: '',
-	// 		toSend: {
-	// 			name: '',
-	// 			email: '',
-	// 			subject: '',
-	// 			message: '',
-	// 		},
-	// 	};
-	// }
-
 	const INITstate = {
 		ismailsent: '',
 		toSend: {
@@ -116,7 +103,7 @@ const LightDarkConstactSection = (props) => {
 					cols='50'
 					onChange={handleInputChange}></textarea>
 				<div className='send-container'>
-					<button className='primary' id='send' onClick={handleSubmit}>
+					<button className='primary-bt' id='send' onClick={handleSubmit}>
 						Send
 					</button>
 				</div>
