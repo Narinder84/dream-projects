@@ -6,16 +6,19 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 7rem;
+	margin-top: 10rem;
 	min-width: 98.5vw;
 	height: 100vh;
+	.sk-h {
+		font-size: 4rem;
+	}
 }
 
 .sk-container {
 	display: flex;
 	img {
 		margin-top: 5rem;
-		height: 10rem;
+		height: 8rem;
 		width: 20rem;
 		margin-bottom: 5rem;
 	}
@@ -23,7 +26,7 @@
 
 .text-box {
 	width: 40%;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	text-align: justify;
 	opacity: 0.8;
 	background: rgb(67, 68, 67);
@@ -38,15 +41,11 @@
 	width: 100%;
 
 	.lan-section-first {
-		border: red 1px solid;
 		display: inline-block;
 		width: 20rem;
 		font-weight: bolder;
 
 		color: var(--primary-color);
-	}
-	.lan-section {
-		border: solid greenyellow 1px;
 	}
 }
 .dark-text-box {
