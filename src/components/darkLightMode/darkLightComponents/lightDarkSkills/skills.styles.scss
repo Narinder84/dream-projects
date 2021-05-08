@@ -31,25 +31,24 @@
 	color: var(--on-primary);
 	border-radius: 1rem;
 	padding: 3rem;
-	.lan {
-		border: red 1px solid;
-		display: flex;
-		align-items: center;
-		width: 100%;
-		.lan-section p {
-			margin: 0;
-			line-height: 2.5rem;
-		}
-		.lan-section-first {
-			display: inline-block;
-			width: 20rem;
-			font-weight: bolder;
+}
+.lan {
+	display: flex;
 
-			color: var(--primary-color);
-		}
+	width: 100%;
+
+	.lan-section-first {
+		border: red 1px solid;
+		display: inline-block;
+		width: 20rem;
+		font-weight: bolder;
+
+		color: var(--primary-color);
+	}
+	.lan-section {
+		border: solid greenyellow 1px;
 	}
 }
-
 .dark-text-box {
 	background-color: rgb(255 255 255/50%);
 }
