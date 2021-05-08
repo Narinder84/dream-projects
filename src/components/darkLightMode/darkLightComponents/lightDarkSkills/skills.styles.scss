@@ -37,18 +37,17 @@
 		display: flex;
 		align-items: center;
 		width: 100%;
-	}
+		.lan-section p {
+			margin: 0;
+			line-height: 2.5rem;
+		}
+		.lan-section-first {
+			display: inline-block;
+			width: 20rem;
+			font-weight: bolder;
 
-	.lan-section p {
-		margin: 0;
-		line-height: 2.5rem;
-	}
-	.lan-section-first {
-		display: inline-block;
-		width: 20rem;
-		font-weight: bolder;
-
-		color: var(--primary-color);
+			color: var(--primary-color);
+		}
 	}
 }
 
