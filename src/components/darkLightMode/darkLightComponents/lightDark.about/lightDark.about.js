@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-import './lightDark.about.styles.css';
+import './about.styles.scss';
 import aboutDay from '../../../../img/undraw_about_me_day.svg';
 
 import aboutNight from '../../../../img/undraw_about_me_night.svg';
@@ -12,7 +12,7 @@ const LightDarkAbout = ({ isLightMode }) => {
 		<section id='about'>
 			<div className='about-container'>
 				<div className='skills-container'>
-					<h1>About</h1>
+					<h1 className='about'>About</h1>
 					<img
 						src={isLightMode ? aboutDay : aboutNight}
 						alt='Idea'
@@ -23,7 +23,7 @@ const LightDarkAbout = ({ isLightMode }) => {
 							isLightMode === false ? ' dark-text-box' : null
 						}`}
 						id='text-box'>
-						<p>
+						<p className='p-t'>
 							Narinder has experience in developing React Apps. He has an
 							extensive knowledge of JavaScript, CSS, SASS, HTML, React,
 							React-Router, Redux, Redux-Thunks. He also have significant
