@@ -2,15 +2,15 @@
 
 import React from 'react';
 
-import './lightDarkSkills.styles.css';
+import './skills.styles.scss';
 import programmimgDay from '../../../../img/undraw_programming_forDay.svg';
 import programmimgNight from '../../../../img/undraw_programming_forNight.svg';
 
 const LightDarkSkills = ({ isLightMode }) => {
 	return (
 		<section id='skills'>
-			<h1>Skills</h1>
-			<div className='about-container'>
+			<h1 className='sk-h'>Skills</h1>
+			<div className='sk-container'>
 				<img
 					src={isLightMode ? programmimgDay : programmimgNight}
 					alt='Idea'
