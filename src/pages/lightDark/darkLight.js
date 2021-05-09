@@ -8,8 +8,9 @@ import LightDarkNave from '../../components/darkLightMode/darkLightComponents/li
 import LightDarkHomeSection from '../../components/darkLightMode/darkLightComponents/lightDark.home/lightDark.home.component';
 import LightDarkAboutSection from '../../components/darkLightMode/darkLightComponents/lightDark.about/lightDark.about';
 import LightDarkSkillsSection from '../../components/darkLightMode/darkLightComponents/lightDarkSkills/lightDarkSkills.component';
-import LightDarkProjectSection from '../../components/darkLightMode/darkLightComponents/lightDark.project/lightDark.project.component';
+// import LightDarkProjectSection from '../../components/darkLightMode/darkLightComponents/lightDark.project/lightDark.project.component';
 import LightDarkConstactSection from '../../components/darkLightMode/darkLightComponents/lightDark.contacts/lightDark.contacts.component';
+import LightDarkProjectSection from '../../components/darkLightMode/darkLightComponents/newlightDark.project/lightDark.project.component';
 
 const DarkAndLight = () => {
 	// constructor(props) {
