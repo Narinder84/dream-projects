@@ -98,3 +98,24 @@
 .dark-text-box {
 	background-color: rgb(255 255 255/50%);
 }
+@media screen and (max-width: 77rem) {
+	#projects {
+		height: 210vh;
+	}
+	.project-section {
+		height: 53vh;
+	}
+	.project-row {
+		flex-wrap: wrap;
+		width: 120vw;
+		padding-right: 1rem;
+	}
+	#text-box-len-project {
+		width: 100vw;
+	}
+	.project-row .description {
+		width: 100vw;
+		margin-right: 3rem;
+		margin-top: 1rem;
+	}
+}
