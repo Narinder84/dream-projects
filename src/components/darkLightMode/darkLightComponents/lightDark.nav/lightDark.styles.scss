@@ -144,6 +144,7 @@ input:checked + .slider::before {
 		width: 100%;
 		display: flex;
 		justify-content: flex-end;
+		padding-right: 1rem;
 	}
 	.theme-switch-wrapper {
 		width: 250px;
