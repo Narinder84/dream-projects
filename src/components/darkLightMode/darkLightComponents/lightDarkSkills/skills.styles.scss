@@ -62,7 +62,8 @@
 
 @media screen and (max-width: 81.2rem) {
 	body {
-		padding-left: 2rem;
+		width: 90vw;
+		padding-left: 2.8rem;
 	}
 	.lan {
 		display: flex;
@@ -71,7 +72,7 @@
 		justify-content: flex-start;
 	}
 	.text-box {
-		margin-right: 2rem;
+		margin-right: 1rem;
 		width: 94vw;
 	}
 }
