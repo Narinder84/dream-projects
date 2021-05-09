@@ -1,10 +1,10 @@
 /** @format */
 
 #nav {
-	background-color: var(--background);
+	background-color: white;
 	padding-top: 2rem;
-	padding-left: 2rem;
-	min-width: 110vw;
+
+	min-width: 100vw;
 	display: flex;
 	justify-content: space-between;
 	top: 0;
@@ -126,8 +126,6 @@ input:checked + .slider::before {
 		/* right: 10px; */
 		flex-direction: column-reverse;
 		letter-spacing: normal;
-		padding-left: 0px;
-		min-width: 100vw;
 	}
 	.fas {
 		font-size: 27px;
