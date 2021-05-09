@@ -1,7 +1,8 @@
 /** @format */
 
 #nav {
-	background-color: var(--background);
+	background-color: white;
+	// background-color: var(--background);
 	padding-top: 2rem;
 	padding-left: 2rem;
 	min-width: 95vw;
@@ -127,12 +128,12 @@ input:checked + .slider::before {
 		flex-direction: column-reverse;
 		letter-spacing: normal;
 		padding-left: 0px;
+		min-width: 97vw;
 	}
 	.fas {
 		font-size: 27px;
 	}
 	.left {
-		margin-left: 1rem;
 		display: inline-flex;
 		justify-content: space-between;
 		padding-top: 10px;
@@ -143,7 +144,6 @@ input:checked + .slider::before {
 	}
 
 	.right {
-		width: 100%;
 		display: flex;
 		justify-content: flex-end;
 		padding-right: 1rem;
