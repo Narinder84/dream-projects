@@ -128,7 +128,9 @@ input:checked + .slider::before {
 		letter-spacing: normal;
 		padding-left: 0px;
 	}
-
+	.fas {
+		font-size: 27px;
+	}
 	.left {
 		margin-left: 1rem;
 		display: inline-flex;
